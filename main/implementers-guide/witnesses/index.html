@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../specification/">
+        <link rel="prev" href="../did-portability/">
       
       
-        <link rel="next" href="../example/">
+        <link rel="next" href="../high-assurance-dids-with-dns/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/decentralized-identity/trustdidweb-info/maindocs/assets/favicon.ico">
@@ -20,14 +20,14 @@
     
     
       
-        <title>did:tdw Implementer's Guide - Trust DID Web (did:tdw) DID Method Information</title>
+        <title>Witnesses - Trust DID Web (did:tdw) DID Method Information</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-pre-rotation-keys" class="md-skip">
+        <a href="#witnesses" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Trust DID Web (did:tdw) DID Method Information" class="md-header__button md-logo" aria-label="Trust DID Web (did:tdw) DID Method Information" data-md-component="logo">
+    <a href="../.." title="Trust DID Web (did:tdw) DID Method Information" class="md-header__button md-logo" aria-label="Trust DID Web (did:tdw) DID Method Information" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/trustdidweb-info/main/docs/assets/tdw.jpg" alt="logo">
 
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              did:tdw Implementer's Guide
+              Witnesses
             
           </span>
         </div>
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   Welcome
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../specification/" class="md-tabs__link">
+        <a href="../../specification/" class="md-tabs__link">
           
   
   The Specification
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   Implementer's Guide
@@ -270,10 +270,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../example/" class="md-tabs__link">
+        <a href="../../example/" class="md-tabs__link">
           
   
-  Examples
+  A `did:tdw` Example Log
 
         </a>
       </li>
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../implementations/" class="md-tabs__link">
+        <a href="../../implementations/" class="md-tabs__link">
           
   
   Implementations
@@ -306,7 +306,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../demos/" class="md-tabs__link">
+        <a href="../../demos/" class="md-tabs__link">
           
   
   Demos
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../root_README/" class="md-tabs__link">
+        <a href="../../root_README/" class="md-tabs__link">
           
   
   Contributing
@@ -363,7 +363,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Trust DID Web (did:tdw) DID Method Information" class="md-nav__button md-logo" aria-label="Trust DID Web (did:tdw) DID Method Information" data-md-component="logo">
+    <a href="../.." title="Trust DID Web (did:tdw) DID Method Information" class="md-nav__button md-logo" aria-label="Trust DID Web (did:tdw) DID Method Information" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/trustdidweb-info/main/docs/assets/tdw.jpg" alt="logo">
 
@@ -432,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../whois/" class="md-nav__link">
+      <a href="../../whois/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../version/" class="md-nav__link">
+      <a href="../../version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -563,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../specification/" class="md-nav__link">
+      <a href="../../specification/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -631,6 +631,69 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The `did:tdw` Implementer's Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prerotation-keys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Pre-Rotation keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../did-portability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DID Portability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -640,162 +703,40 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    did:tdw Implementer's Guide
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    did:tdw Implementer's Guide
+    Witnesses
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-pre-rotation-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Pre-Rotation Keys
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Pre-Rotation Keys">
-      <ul class="md-nav__list">
+    <li class="md-nav__item">
+      <a href="../high-assurance-dids-with-dns/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#key-rotation-with-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Rotation with Pre-Rotation
-    </span>
-  </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-quantum-attacks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Post Quantum Attacks
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    High Assurance DIDs with DNS
+  </span>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-in-using-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges in Using Pre-Rotation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-did-portability" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using DID Portability
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using DID Portability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mergers-acquisitions-and-name-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mergers, Acquisitions and Name Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#did-hosting-service-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      DID Hosting Service Providers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-in-moving-a-did" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges in Moving a DID
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-high-assurance-dids-with-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using High Assurance DIDs with DNS
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using High Assurance DIDs with DNS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#future-possibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Possibilities
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#witnesses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Witnesses
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
@@ -834,7 +775,7 @@
             
   
   <span class="md-ellipsis">
-    Examples
+    A `did:tdw` Example Log
   </span>
   
 
@@ -844,7 +785,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Examples
+            A `did:tdw` Example Log
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -855,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
+      <a href="../../example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../implementations/" class="md-nav__link">
+      <a href="../../implementations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trustdidweb-server/" class="md-nav__link">
+      <a href="../../trustdidweb-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1012,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../demos/" class="md-nav__link">
+      <a href="../../demos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_README/" class="md-nav__link">
+      <a href="../../root_README/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1101,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_CONTRIBUTOR/" class="md-nav__link">
+      <a href="../../root_CONTRIBUTOR/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1122,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_CODE_OF_CONDUCT/" class="md-nav__link">
+      <a href="../../root_CODE_OF_CONDUCT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1160,131 +1101,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-pre-rotation-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Pre-Rotation Keys
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Pre-Rotation Keys">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-rotation-with-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Rotation with Pre-Rotation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-quantum-attacks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Post Quantum Attacks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-in-using-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges in Using Pre-Rotation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-did-portability" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using DID Portability
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using DID Portability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mergers-acquisitions-and-name-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mergers, Acquisitions and Name Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#did-hosting-service-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      DID Hosting Service Providers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-in-moving-a-did" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges in Moving a DID
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-high-assurance-dids-with-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using High Assurance DIDs with DNS
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Using High Assurance DIDs with DNS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#future-possibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Possibilities
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#witnesses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Witnesses
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1302,170 +1120,7 @@
   
 
 
-  <h1>did:tdw Implementer's Guide</h1>
-
-<p>This guide covers non-normative information about Trust DID Web and some of it's
-features -- why the features are part of the spec, how to take advantage of
-them, and what is in the specification vs. what is left for an implementer has
-to worry about.</p>
-<p>Contributions to this guide are welcome. If you learn something about deploying
-did:tdw and want to share -- open an <a href="https://github.com/decentralized-identity/trustdidweb-info">issue</a>, or submit a pull request.</p>
-<h2 id="using-pre-rotation-keys">Using Pre-Rotation Keys<a class="headerlink" href="#using-pre-rotation-keys" title="Permanent link">&para;</a></h2>
-<p>In an effort to prevent the loss of control over a decentralized identifier
-(DID) due to a compromised private key, pre-rotation keys are
-introduced. These commitments, made by the DID Controller, are
-declarations about the authorization keys that will be published in future
-versions of the DID log, without revealing the keys themselves.</p>
-<p>The primary goal of pre-rotation keys is to ensure that even if an attacker
-gains access to the current active key, they will not be able to take control of
-the DID. This safeguard is achieved because the attacker could not simply rotate to
-a key they generate and control. Rather, they would need to have also
-compromised the unpublished (and presumably securely stored) pre-rotation key in
-order to rotate the DID keys.</p>
-<p>The cost of having pre-rotation protection is a more complicated process to update
-the keys of a DID. The following are some considerations we have come across in
-thinking about how to use the pre-rotation feature. The feature adds a
-layer of key management complexity in return for the benefit.</p>
-<h3 id="key-rotation-with-pre-rotation">Key Rotation with Pre-Rotation<a class="headerlink" href="#key-rotation-with-pre-rotation" title="Permanent link">&para;</a></h3>
-<p>In using pre-rotation, a DID Controller should generate an "active" key
-for the DIDDoc that is accessible for "production" purposes (signing,
-decrypting), and generates the "next key" in an isolated location from
-production. This prevents both the "active" and "next key" from being compromised in the
-same intrusion attack. For example, if an intruder gets into your infrastructure and is able to extract all of your
-private keys both DID control keys would be lost. Thus, we expect the feature to be used as follows:</p>
-<ul>
-<li>The DID Controller creating the DID would request from an isolated
-  service the hash of the "next key" as defined in this specification. For
-  example, an entity might have the "active" DID/key hosted by one Cloud
-  Provider, and the "next key" by another, on the theory that an attacker might
-  get into one environment or another but not both.</li>
-<li>When a key rotation is to be done, two entries are put in the log, using the following steps by the DID Controller:</li>
-<li>Get the full key reference entry from the isolated service for the pre-rotation "nextKey".</li>
-<li>Locally generate a pre-rotation key hash for a new key that will soon become the "active" key.</li>
-<li>Add a DID log entry that includes the properties from the previous two steps, and signs the proof using an authorized key (that presumably it controls, though not required).<ol>
-<li>Although the DID log could be published now, it is probably best to hold off and publish it after adding a second, as described by the rest of the steps.</li>
-</ol>
-</li>
-<li>Get a new pre-rotation hash from the isolated service.</li>
-<li>Get the full key-rotation key reference for the pre-rotation hash created for the last DID log entry.</li>
-<li>Add a DID Log entry that includes the properties from the previous two step</li>
-<li>If the key rotated in the previous DID log entry was a/the
-     authorized key to make updates to the DID, call the isolated service to produce
-     the Data Integrity proof over the entry using the key the isolated
-     service controls.<ol>
-<li>This step is not needed if the active service has a key authorized to sign the DIDDoc update.</li>
-</ol>
-</li>
-<li>Publish the new DID log containing the two new entries.</li>
-</ul>
-<h3 id="post-quantum-attacks">Post Quantum Attacks<a class="headerlink" href="#post-quantum-attacks" title="Permanent link">&para;</a></h3>
-<p>One of the potential benefits of this approach to pre-rotation is that it is
-"post-quantum safe". The idea is that in a post-quantum world, the availability
-of the published key and signatures may enable the calculation of the
-corresponding private key. Since the pre-rotation value is a hash of the
-<code>nextKey</code> and not the public key itself, a post-quantum attack would not
-compromise that key, and so a further rotation by the attacker would not be
-possible. If there was a (suspected) need to transition to using a quantum-safe
-key, the same process listed above would be used, but key reference and the
-pre-rotation hash added into the second DID log entry would presumably
-both be for quantum-safe keys.</p>
-<h3 id="challenges-in-using-pre-rotation">Challenges in Using Pre-Rotation<a class="headerlink" href="#challenges-in-using-pre-rotation" title="Permanent link">&para;</a></h3>
-<p>Key management is hard enough without having to maintain isolated key generation
-environments for creating keys for different purposes. Enabling connectivity between
-the key generation environments to enable automated key rotation while maintaining the
-key recovery environment as "isolated" is technically challenging.</p>
-<h2 id="using-did-portability">Using DID Portability<a class="headerlink" href="#using-did-portability" title="Permanent link">&para;</a></h2>
-<p>As noted in the <a href="https://identity.foundation/trustdidweb/#did-portability">DID Portability</a> section of the
-specification, a <code>did:tdw</code> DID can be renamed (ported) by changing the <code>id</code> DID string in
-the DIDDoc to one that resolves to a different HTTPS URL, as long as the
-specified conditions are met.</p>
-<p>While the impact of the feature is in fact the creation of a new DID, we think
-there is significant value in some use cases for supporting the specified
-capability. Ideally, the HTTPS URL for the "old" DID is changed to a redirect to
-the new DID, allowing for a seamless, verifiable evolution of the DID.</p>
-<p>An interesting example use case is a DID that replaces an email address hosted
-by a particular service. The extra capabilities of having the identifier being a
-DID vs. an email address is compelling enough, allowing it to be used for a
-range of services beyond email. The portability benefit comes when the owner of
-the DID decides to move to a new service, taking their DID with them. The
-verifiable history carried over to the renamed DID hosted by the new service
-provides assurance to those who interacted with the old DID (through chats,
-emails, postings, etc.) that they are still engaging with the same entity,
-despite the DID renaming. Compare that with what happens today when you switch
-from one email provider to another, and you have to reach out to all your
-contacts to assure them that you changed providers.</p>
-<p>While portability is powerful, it must be used with care and only in use
-cases where the capability is specifically required. When used, both the
-pre-rotation and witnesses features of <code>did:tdw</code> <strong>SHOULD</strong> also be enabled.</p>
-<h3 id="mergers-acquisitions-and-name-changes">Mergers, Acquisitions and Name Changes<a class="headerlink" href="#mergers-acquisitions-and-name-changes" title="Permanent link">&para;</a></h3>
-<p>Organizations change over time and such changes often involve names changes.
-Name changes in turn trigger domain name changes, as organizations match their
-Web location with their names. Mergers, acquisitions, and simple name changes,
-all can cause an organization's "known" domain name to change, including the
-relinquishment of control over their previous domain name. When such changes
-occur, it is very unlikely that just because the organization's DIDs use the old
-domain name will prevent the changes. Thus the DIDs need to "adapt" to the new
-domain -- the domain name portion of the DID has to change. Ideally, the old
-location and domain can be retained and a web redirect used to resolve the old
-DID to the new, but even if that cannot be done, the ability to use the same
-SCID and retain the full history can be preserved.</p>
-<h3 id="did-hosting-service-providers">DID Hosting Service Providers<a class="headerlink" href="#did-hosting-service-providers" title="Permanent link">&para;</a></h3>
-<p>Consider being able to replace the current identifiers we are given (email
-addresses, phone numbers) with <code>did:tdw</code> DIDs. Comparable hosting platforms
-might publish our DIDs for us (ideally, with us in custody of our own private
-keys...). Those DIDs, with the inherent public keys can be used for many
-purposes -- encrypted email (hello PGP!), messaging, secure file sharing, and
-more.</p>
-<p>From time to time in that imagined future, we may want to move our DIDs
-from one hosting service to another, just as we move from one email or mobile
-provider to another. With DIDs that can move and retain the history, we can make
-such moves smoothly. Contacts will see the change, but also see that the history
-of the DID remains.</p>
-<h3 id="challenges-in-moving-a-did">Challenges in Moving a DID<a class="headerlink" href="#challenges-in-moving-a-did" title="Permanent link">&para;</a></h3>
-<p>While we see great value (and even a hard requirement) for being able to move a
-DID's web location, it does create challenges in aligning with the
-<a href="https://www.w3.org/TR/did-core/">DID Core</a> specification. These challenges are listed below.</p>
-<p>Moving a <code>did:tdw</code> is actually the (partial or complete) deactivation of the old
-DID and the creation of a new DID. The use of the SCID and the way it
-is generated is designed to prevent an attacker from being able to create a DID
-they control but with the same SCID as existing DID. Thus, "finding" a <code>did:tdw</code>
-with the same SCID implies the DIDs are the same. That can be verified by
-processing the DID Log.</p>
-<p>By retaining the incrementing of the <code>versionId</code> after a move, the "new" DID
-does not start at <code>versionId</code> of <code>1</code>. Further, resolving <code>&lt;new-did&gt;?versionId=1</code>
-is going to return a DIDDoc with the top-level <code>id</code> equal to the <code>&lt;old-did&gt;</code>.
-This is useful from a business perspective, but unexpected from a
-<a href="https://www.w3.org/TR/did-core/">DID Core</a> perspective.</p>
-<h2 id="using-high-assurance-dids-with-dns">Using High Assurance DIDs with DNS<a class="headerlink" href="#using-high-assurance-dids-with-dns" title="Permanent link">&para;</a></h2>
-<p>The [High Assurance DIDs with DNS] mechanism that can be used with <code>did:web</code>
-applies equally well with <code>did:tdw</code>.  A DID Controller publishing a
-<code>did:tdw</code> could use the mechanisms defined in the [High Assurance DIDs with DNS]
-specification despite <code>did:tdw</code> DIDs not (yet) being explicitly called out in
-the [High Assurance DIDs with DNS] specification. In particular, as <code>did:tdw</code>
-uses the same DID-to-HTTP transformation, publishing the expected DNS Domain
-records, and adding the required verification method and Data Integrity
-proof to their DIDDoc is done as defined in the [High Assurance DIDs
-with DNS] specification. Likewise, a resolver can include code to check to see if
-the DID Controller published the [High Assurance DIDs with DNS]
-specification DNS records and use those to further verify the DID.</p>
-<p>Alternatively, since <code>did:tdw</code> is not mentioned in the [High Assurance DIDs with
-DNS] specification, a <code>did:tdw</code> DID Controller could use the "not <code>did:web</code>"
-technique described in that specification and include a <code>dnsValidationDomain</code>
-entry in the DIDDoc to explicitly denote where to find the DNS records to use in
-binding the DID to the DNS domain. This technique could also be used with
-<code>did:tdw</code> (and <code>did:web</code> for that matter) if the DID is published on a platform
-(such as GitHub) and the controller wants to bind it to its DNS domain.</p>
-<h3 id="future-possibilities">Future Possibilities<a class="headerlink" href="#future-possibilities" title="Permanent link">&para;</a></h3>
-<p>In the future, as <code>did:tdw</code> becomes more accepted, we would like to see
-<code>did:tdw</code> explicitly added to the [High Assurance DIDs with DNS] specification
-beside <code>did:web</code>.</p>
-<p>Since <code>did:tdw</code> and the [High Assurance DIDs with DNS] specification both have
-the goal of adding methods for additional verifications of the DID, the support
-for <code>did:tdw</code> in the [High Assurance DIDs with DNS] could be more specific to
-the DID Method. For example, the key in the DNS record could be a required
-<code>did:tdw</code> witness, with its Data Integrity proof being a part of the
-DID log entry rather than in the DIDDoc itself.</p>
-<h2 id="witnesses">Witnesses<a class="headerlink" href="#witnesses" title="Permanent link">&para;</a></h2>
+<h1 id="witnesses">Witnesses<a class="headerlink" href="#witnesses" title="Permanent link">&para;</a></h1>
 <p>The term "witness" is often used in the decentralized trust space to refer to
 participants in an ecosystem that oversee the evolution of an identifier
 according to some ecosystem-specific governance framework. The goal is for a
@@ -1547,7 +1202,7 @@ governed ecosystems.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../specification/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Specification">
+          <a href="../did-portability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DID Portability">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1557,20 +1212,20 @@ governed ecosystems.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Specification
+                DID Portability
               </div>
             </div>
           </a>
         
         
           
-          <a href="../example/" class="md-footer__link md-footer__link--next" aria-label="Next: did:tdw DID Log Example">
+          <a href="../high-assurance-dids-with-dns/" class="md-footer__link md-footer__link--next" aria-label="Next: High Assurance DIDs with DNS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                did:tdw DID Log Example
+                High Assurance DIDs with DNS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1604,10 +1259,10 @@ governed ecosystems.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
   </body>
