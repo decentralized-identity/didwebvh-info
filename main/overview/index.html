@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#a-tldr-summary-of-didtdw" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -458,6 +463,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -467,6 +483,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-tldr-summary-of-didtdw" class="md-nav__link">
+    <span class="md-ellipsis">
+      A tl;dr summary of did:tdw
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1095,6 +1137,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-tldr-summary-of-didtdw" class="md-nav__link">
+    <span class="md-ellipsis">
+      A tl;dr summary of did:tdw
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1119,113 +1178,141 @@ Methods</a>
 continues to be a dynamic area of development in the quest for trusted, secure
 and private digital identity management where the users are in control of their
 own data.</p>
-<p>The <a href="https://w3c-ccg.github.io/did-method-web/"><code>did:web</code> method</a> leverages the
-Domain Name System (DNS) to perform the DID operations. This approach is praised
-for its simplicity and ease of deployment, including DID-to-HTTPS transformation
-and addressing some aspects of trust by allowing for DIDs to be associated with
-a domain's reputation or published on platforms such as GitHub. However, it is
-not without its challenges-- from trust layers inherited from the web and the
-absence of a verifiable history for the DID.</p>
-<p>Tackling these concerns, the proposed <code>did:tdw</code> (Trust DID Web)
-method aims to enhance <code>did:web</code> by introducing features such
-as a self-certifying identifiers (SCIDs), update key(s)
-and a verifiable history, akin to what is available with ledger-based DIDs,
-but without relying on a ledger.</p>
-<p>This approach not only maintains backward compatibility with <code>did:web</code> but also offers an
-additional layer of assurance for those requiring more robust verification
-processes. By publishing the resulting DID as both <code>did:web</code> and <code>did:tdw</code>, it
-caters to a broader range of trust requirements, from those who are comfortable
-with the existing <code>did:web</code> infrastructure to those seeking greater security
-assurances provided by <code>did:tdw</code>. This innovative step represents a significant
-stride towards a more trusted and secure web, where the integrity of
-cryptographic key publishing is paramount.</p>
-<p>The key differences between <code>did:web</code> and <code>did:tdw</code> revolve around the core
-issues of decentralization and security. <code>did:web</code> is recognized for its
-simplicity and cost-effectiveness, allowing for easy establishment of a
-credential ecosystem. However, it is not inherently decentralized as it relies
-on DNS domain names, which require centralized registries. Furthermore, it lacks a
-cryptographically verifiable, tamper-resistant, and persistently stored DID
-document. In contrast, <code>did:tdw</code> is proposed as an enhancement
-to <code>did:web</code>, aiming to address these limitations by adding a verifiable history
-to the DID without the need for a ledger. This method seeks to provide a more
-decentralized approach by ensuring that the security of the embedded
-SCID does not depend on DNS. Additionally, <code>did:tdw</code> is
-capable of resolving a cryptographically verifiable trust registry and status
-lists, using DID-Linked Resources, which <code>did:web</code> lacks. These features are
-designed to build a trusted web, offering a higher level of assurance for
-cryptographic key publishing and management.</p>
-<p>For backwards compatibility, and for verifiers that "trust" <code>did:web</code>, a
+<p>The <a href="https://w3c-ccg.github.io/did-method-web/"><code>did:web</code> method</a> provides a solution that is recognized 
+for its simplicity of deployment and its cost-effectiveness, allowing for easy establishment of a 
+credential ecosystem. It leverages the Domain Name System (DNS) to perform the DID operations including 
+DID-to-HTTPS transformation and allowing for DIDs to be associated with a domain's reputation or published 
+on platforms such as GitHub. This approach is, however, not without its challenges. It is, for example, not 
+inherently decentralized as it relies on DNS domain names, which require centralized registries. In addition 
+<code>did:web</code> lacks a cryptographically verifiable, tamper-resistant, and persistently stored DID document,
+including its verifiable history.</p>
+<p>We propose the <code>did:tdw</code> (Trust DID Web) method presented here as an enhancement of <code>did:web</code>, providing a 
+solution to address the limitations inherent of <code>did:web</code>. <code>did:tdw</code> introduces features such as a 
+verifiable history, akin to what is available with ledger-based DIDs, but without relying on a ledger,
+a self-certifying identifiers (SCIDs), and authorized key(s) to increase controll over the creation, update,
+and deactivation of a DID. Furthermore, the <code>did:tdw</code> method provides a more decentralized approach by ensuring 
+that the security of the embedded SCID does not depend on DNS, and enables resolving a cryptographically 
+verifiable trust registry and status lists, using DID-Linked Resources, which <code>did:web</code> lacks. </p>
+<p>In summary, the <code>did:tdw</code> method offers a higher level of assurance for those requiring more robust verification 
+processes compared to what is provided by <code>did:web</code>. It also represents a significant stride towards a more 
+trusted and secure web, where the integrity of cryptographic key publishing and management is paramount. 
+In addition, <code>did:tdw</code> maintains backward compatibility with <code>did:web</code> and the resulting DID can be published 
+as both <code>did:web</code> and <code>did:tdw</code>. These possibilities carter to a flexible and broader range of use cases and 
+corresponding trust requirements, addressing both those who are comfortable with the existing <code>did:web</code> 
+infrastructure to those seeking greater security assurances provided by <code>did:tdw</code>. </p>
+<hr />
+<h3 id="a-tldr-summary-of-didtdw">A <code>tl;dr</code> summary of <code>did:tdw</code><a class="headerlink" href="#a-tldr-summary-of-didtdw" title="Permanent link">&para;</a></h3>
+<blockquote>
+<h4 id="the-didtdw-structure-or-where-is-the-did-doc">The <code>did:tdw</code> Structure <em>(or, where is the <code>DID Doc</code>?)</em><a class="headerlink" href="#the-didtdw-structure-or-where-is-the-did-doc" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>did:tdw</code> uses a so-called DID Log to publish cryptographic material and capabilities</li>
+<li>A <code>DID Log</code> is stored as <code>did.jsonl</code> file and represents a list of entries, each formatted as JSON line</li>
+<li>
+<p>Every <code>DID Log Entry</code> describes a specific version of the corresponding DID via a JSON object</p>
+</li>
+<li>
+<p>DID Log Entry := <code>{ "versionId": "", "versionTime": "", "parameters": {}, "state": {}, "proof" : [] }</code>  </p>
+<ul>
+<li><code>versionId</code> -- a value that combines the version number (starting at <code>1</code> and incremented by one per version), followed by a literal dash <code>-</code>, and a hash of the entry, which links each entry to its predecessor in a ledger-like chain</li>
+<li><code>versionTime</code> -- a string in UTC ISO8601 format </li>
+<li><code>parameters</code> -- a set of parameters that impact the processing of the current and future log entries<ul>
+<li>method</li>
+<li>SCID</li>
+<li>updateKeys</li>
+<li>portable (optional)</li>
+<li>prerotation (optional)</li>
+<li>nextKeyHashes (optional)</li>
+<li>witnesses (optional)</li>
+<li>deactivated (when accurate)</li>
+<li>ttl (optional)</li>
+</ul>
+</li>
+<li><code>state</code> -- the current version of the DIDDoc</li>
+<li><code>proof</code>-- a Data Integrity (DI) proof calculated across the entry, signed by a DID Controller authorized key to update the DIDDoc, and optionally, a set of witnesses that monitor the actions of the DID Controller</li>
+</ul>
+</li>
+<li>
+<p>The entire <code>DID Doc</code> is part of the "state" object <em>(in every JSON line of a DID Log Entry within the DID Log File)</em></p>
+</li>
+</ul>
+<h4 id="creating-the-first-did-doc">Creating the first DID Doc<a class="headerlink" href="#creating-the-first-did-doc" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Create a preliminary log entry</li>
+<li>
+<p>Create the JSON structure with the aforementioned properties and the following values:</p>
+<ul>
+<li><code>versionId</code> := the literal string "<code>{SCID}</code>"</li>
+<li><code>versionTime</code> := as asserted by the DID Controller, for example, <code>"2024-04-05T07:32:58Z"</code></li>
+<li><code>parameters</code> := as needed and defined by the DID Controller, for example:<ul>
+<li>method := <code>did:tdw:0.4</code></li>
+<li>SCID := the literal string "<code>{SCID}</code>" (here and wherever the calculated SCID value will eventually be placed)</li>
+</ul>
+</li>
+<li><code>state</code> := initial DID Doc with placeholders (the literal string "<code>{SCID}</code>") wherever the calculated SCID value will eventually be placed</li>
+<li><em><code>proof</code> := not set at this point. Will be set in step 4 below</em></li>
+</ul>
+</li>
+<li>
+<p>Calculate the SCID</p>
+</li>
+<li>
+<p>SCID := <code>base58btc(multihash(JCS(preliminary log entry with placeholders), &lt;hash algorithm&gt;))</code></p>
+<ul>
+<li><code>JCS</code> := an implementation of the [[ref: JSON Canonicalization Scheme]] [[spec:rfc8785]]</li>
+<li><code>multihash</code> := an implementation of the [[ref: multihash]] specification</li>
+<li><code>&lt;hash algorithm&gt;</code> := one of the hash algorithms accepted by  <code>did:tdw</code> (see <a href="#didtdw-did-method-parameters">parameters</a>)</li>
+<li><code>base58btc</code> := an implementation of the [[ref: base58btc]] function</li>
+</ul>
+</li>
+<li>
+<p>Update the preliminary log entry</p>
+</li>
+<li>Replace all placeholders (the literal string <code>{SCID}</code>) with the calculated SCID value</li>
+<li>
+<p>For the <code>versionId</code> start with <code>1</code> followed by a literal dash <code>-</code></p>
+</li>
+<li>
+<p>Calculate the data integrity (DI) proof</p>
+</li>
+<li>
+<p><code>proof</code> := a proof calculated across the <em>entire</em> DID Log Entry and signed with an updateKeys (and optionally by the witnesses). Values of required attributes include:</p>
+<ul>
+<li>type := eddsa-jcs-2022</li>
+<li>proofPurpose := <code>assertionMethod</code></li>
+</ul>
+</li>
+<li>
+<p>Add the DI proof to the <code>proof</code> property of the DID Log Entry</p>
+</li>
+</ol>
+<h4 id="creating-the-first-did-log">Creating the first DID Log<a class="headerlink" href="#creating-the-first-did-log" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Turn the Log Entry into a JSON Line according the [[ref JSON Lines]] specification and add the line to the DID Log File for publication</li>
+</ul>
+<h4 id="some-considerations">Some considerations<a class="headerlink" href="#some-considerations" title="Permanent link">&para;</a></h4>
+<ul>
+<li>DID update<ul>
+<li>The SCID is only calculated for the very first DID Log Entry and not for consecutive DID updates (i.e., new DID Log Entry)</li>
+<li>Instead of a SCID, each a new EntryHash is calculated in a similar way, for every consecutive DID Log Entry<ul>
+<li>EntryHash := <code>base58btc(multihash(JCS(entry), &lt;hash algorithm&gt;))</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Note: Both the SCID and the EntryHash are calculated <em>before</em> the DI proof calculation</li>
+<li><code>did:tdw</code> uses the same DID-to-HTTPS transformation as <code>did:web</code>, so <code>did:tdw</code>'s  <code>did.jsonl</code> (JSON Lines) file is found in the same location as <code>did:web</code>'s <code>did.json</code> file, and supports an easy transition from <code>did:web</code> to gain the added benefits of <code>did:tdw</code>.</li>
+<li>For backwards compatibility, and for verifiers that "trust" <code>did:web</code>, a
 <code>did:tdw</code> can be trivially modified and published in parallel to a <code>did:web</code>
 DID. For resolvers that want more assurance, <code>did:tdw</code> provides a way to "trust
 did:web" (or to enable a "trusted web" if you say it fast) enabled by the
-features listed in the <a href="../">introduction</a>.</p>
-<p>The following is a <code>tl;dr</code> summary of how <code>did:tdw</code> works:</p>
-<ol>
-<li><code>did:tdw</code> uses the same DID-to-HTTPS transformation as <code>did:web</code>, so
-   <code>did:tdw</code>'s  <code>did.jsonl</code> (JSON Lines) file is found in the same
-   location as <code>did:web</code>'s <code>did.json</code> file, and supports an easy transition
-   from <code>did:web</code> to gain the added benefits of <code>did:tdw</code>.</li>
-<li>The <code>did.jsonl</code> is a list of JSON DID log entries, one per line,
-   whitespace removed (per JSON Lines). Each entry contains the
-   information needed to derive a version of the DIDDoc from its preceding
-   version. The <code>did.jsonl</code> is also referred to as the DID Log.</li>
-<li>Each DID log entry is a JSON object containing the following properties:<ol>
-<li><code>versionId</code> -- a value that combines the version number
-   (starting at <code>1</code> and incremented by one per version), a literal dash
-   <code>-</code>, and a hash of the entry. The entry hash calculation links each entry
-   to its predecessor in a ledger-like chain.</li>
-<li><code>versionTime</code> -- as asserted by the DID Controller.</li>
-<li><code>parameters</code> -- a set of parameters that impact the processing of the current and
-  future log entries.<ul>
-<li>Example parameters are the version of the <code>did:tdw</code> specification and
-hash algorithm being used as well as the SCID and update key(s).</li>
+features listed in the <a href="../">introduction</a>.</li>
 </ul>
-</li>
-<li><code>state</code> -- the new version of the DIDDoc.</li>
-<li>A Data Integrity (DI) proof across the entry, signed by a [[ref:
-  DID Controller authorized key to update the DIDDoc, and optionally,
-  a set of witnesses that monitor the actions of the DID Controller.</li>
-</ol>
-</li>
-<li>In generating the first version of the DIDDoc, the DID
-  Controller calculates the SCID for the DID from the first [[ref:
-  log entry (which includes the DIDDoc) by using the string
-  <code>"{SCID}"</code> everywhere the actual SCID is to be placed. The DID
-  Controller then replaces the placeholders with the calculated SCID,
-  including it as a <code>parameter</code> in the first log entry, and inserting
-  it where needed in the initial (and all subsequent) DIDDocs. The SCID
-  enables an optional portability capability, allowing a DID's web
-  location to be moved, while retaining the DID and version history of the DID.</li>
-<li>A DID Controller generates and publishes the new/updated DID Log file by making it
-  available at the appropriate location on the web, based on the identifier of the
-  DID.</li>
-<li>Given a <code>did:tdw</code> DID, a resolver converts the DID to an HTTPS URL,
-  retrieves, and processes the DID Log <code>did.jsonl</code>, generating and verifying
-  each log entry as per the requirements outlined in this specification.<ul>
-<li>In the process, the resolver collects all the DIDDoc versions and public
-  keys used by the DID currently, or in the past. This enables
-  resolving both current and past versions of the DID.</li>
-</ul>
-</li>
-<li><code>did:tdw</code> DID URLs with paths and <code>/whois</code> are resolved to documents
-  published by the DID Controller that are by default in the web location relative to the
-  <code>did.jsonl</code> file. See <a href="../whois/">did/whois</a> for more about the
-   powerful use cases enabled by the <code>/whois</code> DID URL path.</li>
-<li>Optionally, a DID Controller can easily generate and publish a <code>did:web</code> DIDDoc
-  from the latest <code>did:tdw</code> DIDDoc in parallel with the <code>did:tdw</code> DID Log.</li>
-</ol>
+</blockquote>
+<hr />
 <p>::: warning
     A resolver settling for just the <code>did:web</code> version of the DID does not get the
     verifiability of the <code>did:tdw</code> log.
   :::</p>
-<p>An example of a <code>did:tdw</code> evolving through a series of versions can be seen in
-the <a href="../example/">did:tdw Examples</a> included on this site.</p>
-<p>The specification was developed in parallel with the development of two
-proof of concept implementations. The specification/implementation interplay
-helped immensely in defining a practical, intuitive, straightforward, DID
-method. The existing proof of concept implementations of the <code>did:tdw</code> DID
-Method are listed in the <a href="../implementers-guide/">Implementers Guide</a>. The current
-implementations range from around 1500 to 2000 lines of code.</p>
 
 
 

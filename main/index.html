@@ -1111,41 +1111,48 @@
 
   <h1>Introduction to Trust DID Web</h1>
 
-<p>Trust DID Web (<code>did:tdw</code>) is an enhancement to the <code>did:web</code> DID method,
-providing complementary features that address <code>did:web</code>'s
-limitations. <code>did:tdw</code> features include:</p>
+<p>Trust DID Web (<code>did:tdw</code>) is a DID method that is being developed with the aim of enabling greater trust and security 
+than <code>did:web</code> without compromising the simplicity of <code>did:web</code>.
+Core features of the <code>did:tdw</code> method that complement <code>did:web</code> include:</p>
 <ul>
-<li>Ongoing publishing of all DID Document (DIDDoc) versions for a DID instead of,
-  or alongside a current <code>did:web</code> DID/DIDDoc.</li>
-<li>The same DID-to-HTTPS transformation as <code>did:web</code>.</li>
-<li>Supports the same <a href="https://datatracker.ietf.org/doc/draft-carter-high-assurance-dids-with-dns/">High Assurance DIDs with DNS</a> mechanism.</li>
-<li>The ability to resolve the full history of the DID using a verifiable chain of
+<li><strong>A Verifiable History</strong>: The ability to resolve the full history of the DID using a verifiable chain of
   updates to the DIDDoc from genesis to deactivation.</li>
-<li>A self-certifying identifier (SCID) for the DID. The SCID, globally unique and
+<li><strong>A Self-Certifying Identifier (SCID)</strong>: The SCID, globally unique and
   embedded in the DID, is derived from the initial DID log entry. It ensures the integrity
   of the DID's history mitigating the risk of attackers creating a new object with
   the same identifier.</li>
-<li>An optional mechanism for enabling DID portability via the SCID, allowing
+<li><strong>Authorized Keys</strong>: DIDDoc updates contain a proof signed by the DID Controllers <em>authorized</em> to
+  update the DID.</li>
+<li><strong>Pre-rotation Keys</strong> (optional): The mechanism for publishing pre-rotation keys prevents the loss of
+  control of a DID in cases where an active private key is compromised.</li>
+<li><strong>Witnesses</strong> (optional): The mechanism for having witnesses enables the collaborative
+  approval of updates to the DID by a DID Controller before publication.</li>
+<li><strong>DID Portability</strong> (optional): The mechanism for enabling potability allows
   the DID's web location to be moved and the DID string to be updated, both while retaining
   a connection to the predecessor DID(s) and preserving the DID's verifiable history.</li>
-<li>DIDDoc updates contain a proof signed by the DID Controllers <em>authorized</em> to
-  update the DID.</li>
-<li>An optional mechanism for publishing "pre-rotation" keys to prevent the loss of
-  control of a DID in cases where an active private key is compromised.</li>
-<li>An optional mechanism for having collaborating witnesses
-  that approve of updates to the DID by a DID Controller before publication.</li>
-<li>DID URL path handling that defaults (but can be overridden) to automatically
+</ul>
+<p>In addition, the <code>did:tdw</code> method supports:</p>
+<ul>
+<li><strong>A DID URL path handling</strong> that defaults (but can be overridden) to automatically
   resolving <code>&lt;did&gt;/path/to/file</code> by using a comparable DID-to-HTTPS translation
   as for the DIDDoc.</li>
-<li>A DID URL path <code>&lt;did&gt;/whois</code> that defaults to automatically returning (if
+<li><strong>A DID URL path <code>&lt;did&gt;/whois</code></strong> that defaults to automatically returning (if
   published by the [[ref: DID controller]]) a [[ref: Verifiable Presentation]]
   containing [[ref: Verifiable Credentials]] with the DID as the
   <code>credentialSubject</code>, signed by the DID. It draws inspiration from the
   traditional WHOIS protocol [[spec:rfc3912]], offering an easy-to-use,
   decentralized, trust registry.</li>
+<li><strong>DID-to-HTTPS transformation</strong> that is the same as used for <code>did:web</code>.</li>
+<li><strong><a href="https://datatracker.ietf.org/doc/draft-carter-high-assurance-dids-with-dns/">High Assurance DIDs with DNS</a> mechanism</strong> that is the same as used for <code>did:web</code>.</li>
 </ul>
-<p>Combined, the additional features enable greater trust and security without
-compromising the simplicity of <code>did:web</code>.</p>
+<p>The <code>did:tdw</code> specification and based on it the implementer's guide were developed in parallel with the development of two
+proof of concept implementations. The specification/implementation interplay
+helped immensely in defining a practical, intuitive, straightforward, DID
+method. The existing proof of concept implementations of the <code>did:tdw</code> DID
+Method are listed in the <a href="implementers-guide/">Implementers Guide</a>. The current
+implementations range from around 1500 to 2000 lines of code.</p>
+<p>An example of a <code>did:tdw</code> evolving through a series of versions can be seen in
+the <a href="example/">did:tdw Examples</a> included on this site.</p>
 
 
 
