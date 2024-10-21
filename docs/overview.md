@@ -75,10 +75,10 @@ infrastructure to those seeking greater security assurances provided by `did:tdw
 >
 > 2. Calculate the SCID
 >    - SCID := `base58btc(multihash(JCS(preliminary log entry with placeholders), <hash algorithm>))`
->        - `JCS` := an implementation of the [[ref: JSON Canonicalization Scheme]] [[spec:rfc8785]]
->        - `multihash` := an implementation of the [[ref: multihash]] specification
->        - `<hash algorithm>` := one of the hash algorithms accepted by  `did:tdw` (see [parameters](#didtdw-did-method-parameters))
->        - `base58btc` := an implementation of the [[ref: base58btc]] function
+>       - `JCS` := an implementation of the [[ref: JSON Canonicalization Scheme]] [[spec:rfc8785]]
+>       - `multihash` := an implementation of the [[ref: multihash]] specification
+>       - `<hash algorithm>` := one of the hash algorithms accepted by  `did:tdw` (see [parameters](#didtdw-did-method-parameters))
+>       - `base58btc` := an implementation of the [[ref: base58btc]] function
 >
 > 3. Update the preliminary log entry
 >    - Replace all placeholders (the literal string `{SCID}`) with the calculated SCID value
@@ -86,8 +86,8 @@ infrastructure to those seeking greater security assurances provided by `did:tdw
 >
 > 4. Calculate the data integrity (DI) proof
 >    - `proof` := a proof calculated across the *entire* DID Log Entry and signed with an updateKeys (and optionally by the witnesses). Values of required attributes include:
->        - type := eddsa-jcs-2022
->        - proofPurpose := `assertionMethod`
+>       - type := eddsa-jcs-2022
+>       - proofPurpose := `assertionMethod`
 >
 > 5. Add the DI proof to the `proof` property of the DID Log Entry
 >
