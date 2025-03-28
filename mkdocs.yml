@@ -82,6 +82,7 @@ nav:
     - Overview: overview.md
     - Work Item Meetings: agenda.md
     - did/whois: whois.md
+    - Resolution Errors/Details: resolution-errors.md
     - Release Notes: version.md
 - The Specification:
     - Specification: specification.md
