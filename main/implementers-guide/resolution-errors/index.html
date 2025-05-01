@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../specification/">
+        <link rel="prev" href="../resolver-algorithm/">
       
       
-        <link rel="next" href="resolver-algorithm/">
+        <link rel="next" href="../did-valid-keys/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/favicon.ico">
@@ -20,14 +20,14 @@
     
     
       
-        <title>The `did:webvh` Implementer's Guide - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
+        <title>did:webvh Resolution Error Codes - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-didwebvh-implementers-guide" class="md-skip">
+        <a href="#didwebvh-resolution-error-codes" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-header__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href="../.." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-header__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The `did:webvh` Implementer's Guide
+              did:webvh Resolution Error Codes
             
           </span>
         </div>
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   Welcome
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../specification/" class="md-tabs__link">
+        <a href="../../specification/" class="md-tabs__link">
           
   
   The Specification
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   Implementer's Guide
@@ -270,7 +270,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../example/" class="md-tabs__link">
+        <a href="../../example/" class="md-tabs__link">
           
   
   A `did:webvh` Example Log
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../implementations/" class="md-tabs__link">
+        <a href="../../implementations/" class="md-tabs__link">
           
   
   Implementations
@@ -306,7 +306,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../demos/" class="md-tabs__link">
+        <a href="../../demos/" class="md-tabs__link">
           
   
   Demos
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../root_README/" class="md-tabs__link">
+        <a href="../../root_README/" class="md-tabs__link">
           
   
   Contributing
@@ -363,7 +363,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-nav__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href="../.." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-nav__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
@@ -432,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agenda/" class="md-nav__link">
+      <a href="../../agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../whois/" class="md-nav__link">
+      <a href="../../whois/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../version/" class="md-nav__link">
+      <a href="../../version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../specification/" class="md-nav__link">
+      <a href="../../specification/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,19 +673,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,7 +685,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -707,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resolver-algorithm/" class="md-nav__link">
+      <a href="../resolver-algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,10 +715,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="resolution-errors/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    did:webvh Resolution Error Codes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -737,6 +747,167 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-rfc-9457-in-didwebvh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using RFC 9457 in did:webvh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementer-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementer Guidance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolution-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resolution Error Codes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resolution Error Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#did-log-id-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      did-log-id-mismatch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conflicting-resolution-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      conflicting-resolution-options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      unknown-protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      version-mismatch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scid-verification-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      scid-verification-failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-verification-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      proof-verification-failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portability-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      portability-disabled
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash-chain-broken" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash-chain-broken
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-method-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      verification-method-not-found
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-method-resolution-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      verification-method-resolution-error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-not-authorized-to-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      key-not-authorized-to-update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#witness-key-not-authorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      witness-key-not-authorized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -749,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="did-valid-keys/" class="md-nav__link">
+      <a href="../did-valid-keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="prerotation-keys/" class="md-nav__link">
+      <a href="../prerotation-keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="did-portability/" class="md-nav__link">
+      <a href="../did-portability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="witnesses/" class="md-nav__link">
+      <a href="../witnesses/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="high-assurance-dids-with-dns/" class="md-nav__link">
+      <a href="../high-assurance-dids-with-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
+      <a href="../../example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -969,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../implementations/" class="md-nav__link">
+      <a href="../../implementations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -990,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../didwebvh-server/" class="md-nav__link">
+      <a href="../../didwebvh-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../demos/" class="md-nav__link">
+      <a href="../../demos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_README/" class="md-nav__link">
+      <a href="../../root_README/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1147,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_CONTRIBUTOR/" class="md-nav__link">
+      <a href="../../root_CONTRIBUTOR/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../root_CODE_OF_CONDUCT/" class="md-nav__link">
+      <a href="../../root_CODE_OF_CONDUCT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,6 +1380,155 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-rfc-9457-in-didwebvh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using RFC 9457 in did:webvh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementer-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementer Guidance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolution-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resolution Error Codes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resolution Error Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#did-log-id-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      did-log-id-mismatch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conflicting-resolution-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      conflicting-resolution-options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      unknown-protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      version-mismatch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scid-verification-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      scid-verification-failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-verification-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      proof-verification-failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portability-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      portability-disabled
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash-chain-broken" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash-chain-broken
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-method-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      verification-method-not-found
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-method-resolution-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      verification-method-resolution-error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-not-authorized-to-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      key-not-authorized-to-update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#witness-key-not-authorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      witness-key-not-authorized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1225,18 +1545,73 @@
   
 
 
-<h1 id="the-didwebvh-implementers-guide">The <code>did:webvh</code> Implementer's Guide<a class="headerlink" href="#the-didwebvh-implementers-guide" title="Permanent link">&para;</a></h1>
-<p>This series of articles shares insights from developers and deployers of Trust
-DID Web (<code>did:webvh</code>), highlighting lessons learned from real-world deployments
-and use cases. </p>
-<p>The guide explores the features of <code>did:webvh</code>, how to deploy them,
-what’s covered in the specification versus what implementers need to handle,
-provides pointers to existing implementations, and more.</p>
-<p>Contributions to the guide are welcome! If you have learned something about
-deploying did:webvh and want to share -- open an <a href="https://github.com/decentralized-identity/didwebvh-info">issue</a>, or submit a pull request
-to add an article. If you do add an article, make sure you put a link to your
-new article in the <code>mkdocs.yml</code> file in the root of the <a href="https://github.com/decentralized-identity/didwebvh-info">didwebvh-info</a>
-repository (or we are happy to do it for you...).</p>
+<h1 id="didwebvh-resolution-error-codes"><code>did:webvh</code> Resolution Error Codes<a class="headerlink" href="#didwebvh-resolution-error-codes" title="Permanent link">&para;</a></h1>
+<p>did:webvh Resolution Error Codes
+This page defines the set of structured error codes and messages used in <code>did:webvh</code> DID resolution metadata, specifically in the <code>problemDetails</code> field as defined by <a href="https://datatracker.ietf.org/doc/html/rfc9457">RFC 9457</a>.</p>
+<h2 id="using-rfc-9457-in-didwebvh">Using RFC 9457 in did:webvh<a class="headerlink" href="#using-rfc-9457-in-didwebvh" title="Permanent link">&para;</a></h2>
+<p>When DID resolution fails, <code>did:webvh</code> resolvers <strong>MUST</strong> return an <code>error</code> field in the <code>didResolutionMetadata</code>, as defined in the <a href="https://www.w3.org/TR/did-core/#did-resolution">DID Resolution specification</a>. To provide additional structured information, resolvers <strong>SHOULD</strong> include a <code>problemDetails</code> object conforming to RFC 9457. For example, the DID Resolution Metadata would look like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&quot;didResolutionMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalidDid&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;problemDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/security#INVALID_CONTROLLED_IDENTIFIER_DOCUMENT_ID&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The resolved DID is invalid.&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Parse error of the resolved DID at character 3, expected &#39;:&#39;.&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>The <code>problemDetails</code> object includes the following fields:</p>
+<ul>
+<li><code>type</code>: A URI pointing to this page, with a fragment identifier representing the error code from the <a href="#resolution-error-codes">list below</a>. For example:<br />
+<code>https://didwebvh.info/main/resolution-errors/#did-log-id-mismatch</code></li>
+<li><code>title</code>: A human-readable title for the error, matching the one listed in the section for the corresponding error code below.</li>
+<li><code>detail</code>: A more specific message describing the error encountered, suitable for developers or technical users.</li>
+</ul>
+<p>The list of <code>title</code> and <code>detail</code> values collected by <code>did:webvh</code> resolver implementers is <a href="#resolution-error-codes">provided below</a>.</p>
+<p>Resolver implementers <strong>SHOULD</strong> use the <code>type</code> and <code>title</code> values below and <strong>MAY</strong> use the <code>detail</code> or one appropriate for the implementation.</p>
+<h2 id="implementer-guidance">Implementer Guidance<a class="headerlink" href="#implementer-guidance" title="Permanent link">&para;</a></h2>
+<p>Resolver implementers should use the errors listed below as standardized codes for communicating resolution failures. If your resolver needs to report an error not listed here, you are encouraged to contribute to this list via a pull request to the <a href="https://github.com/did-webvh-info">did:webvh information site GitHub repository</a>. Please ensure your proposed error includes:</p>
+<ul>
+<li>A clear and unique error code (used as the fragment in the <code>type</code> URI)</li>
+<li>A descriptive title</li>
+<li>A concise, developer-friendly detail message</li>
+</ul>
+<h2 id="resolution-error-codes">Resolution Error Codes<a class="headerlink" href="#resolution-error-codes" title="Permanent link">&para;</a></h2>
+<h3 id="did-log-id-mismatch">did-log-id-mismatch<a class="headerlink" href="#did-log-id-mismatch" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> DID Log for DID being resolved not found<br />
+<strong>Detail:</strong> A DID Log File was found, but the <code>id</code> in the DIDDoc does not match the DID <code>${did}</code> being resolved.</p>
+<h3 id="conflicting-resolution-options">conflicting-resolution-options<a class="headerlink" href="#conflicting-resolution-options" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Cannot specify both verificationMethod and version number/id<br />
+<strong>Detail:</strong> Conflicting resolution options were provided in the resolution request.</p>
+<h3 id="unknown-protocol">unknown-protocol<a class="headerlink" href="#unknown-protocol" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Protocol unknown. 
+<strong>Detail:</strong> The protocol '${protocol}' in the DID Log File does not match the expected protocol.</p>
+<h3 id="version-mismatch">version-mismatch<a class="headerlink" href="#version-mismatch" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Version number in log doesn't match expected 
+<strong>Detail:</strong> A DID log entry's version number '<span 1="1" _="+" class="arithmatex" i="i">\({version}' does not match the expected sequence '\)</span>'.</p>
+<h3 id="scid-verification-failed">scid-verification-failed<a class="headerlink" href="#scid-verification-failed" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> SCID not derived from logEntryHash<br />
+<strong>Detail:</strong> SCID ('<span class="arithmatex" logEntryHash="logEntryHash">\({meta.scid}') validation failed due to a mismatch in expected hash ('\)</span>').</p>
+<h3 id="proof-verification-failed">proof-verification-failed<a class="headerlink" href="#proof-verification-failed" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Version failed verification of the proof<br />
+<strong>Detail:</strong> The proof attached to the version (${meta.versionId}) log entry failed verification.</p>
+<h3 id="portability-disabled">portability-disabled<a class="headerlink" href="#portability-disabled" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Cannot move DID: portability is disabled<br />
+<strong>Detail:</strong> An attempt was made to move a DID, but portability is not enabled in the DID Log.</p>
+<h3 id="hash-chain-broken">hash-chain-broken<a class="headerlink" href="#hash-chain-broken" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Hash chain broken<br />
+<strong>Detail:</strong> The cryptographic hash chain was broken at version '${meta.versionId}'.</p>
+<h3 id="verification-method-not-found">verification-method-not-found<a class="headerlink" href="#verification-method-not-found" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Verification method not found<br />
+<strong>Detail:</strong> The verification method ${vm} could not be located in the DIDDoc or verification context.</p>
+<h3 id="verification-method-resolution-error">verification-method-resolution-error<a class="headerlink" href="#verification-method-resolution-error" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Error resolving verification method
+<strong>Detail:</strong> A general error occurred while resolving the specified verification method ${vm}.</p>
+<h3 id="key-not-authorized-to-update">key-not-authorized-to-update<a class="headerlink" href="#key-not-authorized-to-update" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Key is not authorized to update<br />
+<strong>Detail:</strong> The key ${proof.verificationMethod} used in the proof is not in the list of authorized update keys.</p>
+<h3 id="witness-key-not-authorized">witness-key-not-authorized<a class="headerlink" href="#witness-key-not-authorized" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Key is not from an authorized witness<br />
+<strong>Detail:</strong> The key ${proof.verificationMethod} used in the proof is not recognized as coming from an authorized witness.</p>
 
 
 
@@ -1272,7 +1647,7 @@ repository (or we are happy to do it for you...).</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../specification/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Specification">
+          <a href="../resolver-algorithm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Implementing a `did:webvh` Resolver">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1282,20 +1657,20 @@ repository (or we are happy to do it for you...).</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Specification
+                Implementing a `did:webvh` Resolver
               </div>
             </div>
           </a>
         
         
           
-          <a href="resolver-algorithm/" class="md-footer__link md-footer__link--next" aria-label="Next: Implementing a `did:webvh` Resolver">
+          <a href="../did-valid-keys/" class="md-footer__link md-footer__link--next" aria-label="Next: What Are A DID&#39;s Valid Keys?">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Implementing a `did:webvh` Resolver
+                What Are A DID's Valid Keys?
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1329,10 +1704,10 @@ repository (or we are happy to do it for you...).</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
   </body>
