@@ -828,6 +828,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#version-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      version-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionid-format-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      versionid-format-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versiontime-format-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      versiontime-format-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scid-verification-failed" class="md-nav__link">
     <span class="md-ellipsis">
       scid-verification-failed
@@ -1451,6 +1478,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#version-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      version-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionid-format-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      versionid-format-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versiontime-format-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      versiontime-format-invalid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scid-verification-failed" class="md-nav__link">
     <span class="md-ellipsis">
       scid-verification-failed
@@ -1588,6 +1642,15 @@ This page defines the set of structured error codes and messages used in <code>d
 <h3 id="version-mismatch">version-mismatch<a class="headerlink" href="#version-mismatch" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> Version number in log doesn't match expected 
 <strong>Detail:</strong> A DID log entry's version number '<span 1="1" _="+" class="arithmatex" i="i">\({version}' does not match the expected sequence '\)</span>'.</p>
+<h3 id="version-invalid">version-invalid<a class="headerlink" href="#version-invalid" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> Version number in log is invalid 
+<strong>Detail:</strong> A DID log entry's version number '${version}' is zero or not numeric.</p>
+<h3 id="versionid-format-invalid">versionid-format-invalid<a class="headerlink" href="#versionid-format-invalid" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> VersionId format is invalid.
+<strong>Detail:</strong> A DID log entry's versionId '${versionId}' format is invalid.</p>
+<h3 id="versiontime-format-invalid">versiontime-format-invalid<a class="headerlink" href="#versiontime-format-invalid" title="Permanent link">&para;</a></h3>
+<p><strong>Title:</strong> VersionTime format is invalid.
+<strong>Detail:</strong> A DID log entry ('${version}') has a <code>versionTime</code> that cannot be parsed as a ISO date-time for comparisons.</p>
 <h3 id="scid-verification-failed">scid-verification-failed<a class="headerlink" href="#scid-verification-failed" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> SCID not derived from logEntryHash<br />
 <strong>Detail:</strong> SCID ('<span class="arithmatex" logEntryHash="logEntryHash">\({meta.scid}') validation failed due to a mismatch in expected hash ('\)</span>').</p>
