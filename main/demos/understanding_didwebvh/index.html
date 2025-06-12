@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../did-valid-keys/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../did-portability/">
+        <link rel="next" href="../../root_README/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/favicon.ico">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Using Pre-Rotation keys - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
+        <title>Tutorial -- Understanding did:webvh DID Log Entry Details - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-pre-rotation-keys" class="md-skip">
+        <a href="#understanding-didwebvh-did-log-entry-details" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using Pre-Rotation keys
+              Tutorial -- Understanding did:webvh DID Log Entry Details
             
           </span>
         </div>
@@ -246,13 +246,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../implementers-guide/" class="md-tabs__link">
           
   
   Implementer's Guide
@@ -302,11 +300,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../demos/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   Demos
@@ -651,28 +651,25 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -683,7 +680,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Implementer's Guide
@@ -697,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../implementers-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -718,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resolver-algorithm/" class="md-nav__link">
+      <a href="../../implementers-guide/resolver-algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resolution-errors/" class="md-nav__link">
+      <a href="../../implementers-guide/resolution-errors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -760,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../did-valid-keys/" class="md-nav__link">
+      <a href="../../implementers-guide/did-valid-keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,30 +775,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Using Pre-Rotation keys
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../implementers-guide/prerotation-keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,53 +787,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-rotation-with-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Rotation with Pre-Rotation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#post-quantum-attacks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Post Quantum Attacks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenges-in-using-pre-rotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges in Using Pre-Rotation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -869,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../did-portability/" class="md-nav__link">
+      <a href="../../implementers-guide/did-portability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -890,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../witnesses/" class="md-nav__link">
+      <a href="../../implementers-guide/witnesses/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../high-assurance-dids-with-dns/" class="md-nav__link">
+      <a href="../../implementers-guide/high-assurance-dids-with-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,25 +1023,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1122,7 +1055,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Demos
@@ -1136,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demos/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1154,10 +1087,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../demos/understanding_didwebvh/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tutorial -- Understanding did:webvh DID Log Entry Details
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1166,6 +1119,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-setting-up-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Setting up Your Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-your-first-didwebvh-log-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Your First did:webvh Log Entry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-publishing-your-didwebvh-log-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Publishing Your did:webvh Log File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-updating-your-didwebvh-did" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Updating Your did:webvh DID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1315,27 +1351,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-rotation-with-pre-rotation" class="md-nav__link">
+  <a href="#audience" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Rotation with Pre-Rotation
+      Audience
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-quantum-attacks" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Post Quantum Attacks
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-in-using-pre-rotation" class="md-nav__link">
+  <a href="#step-1-setting-up-your-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      Challenges in Using Pre-Rotation
+      Step 1: Setting up Your Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-your-first-didwebvh-log-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Your First did:webvh Log Entry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-publishing-your-didwebvh-log-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Publishing Your did:webvh Log File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-updating-your-didwebvh-did" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Updating Your did:webvh DID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -1359,70 +1431,141 @@
   
 
 
-<h1 id="using-pre-rotation-keys">Using Pre-Rotation Keys<a class="headerlink" href="#using-pre-rotation-keys" title="Permanent link">&para;</a></h1>
-<p>In an effort to prevent the loss of control over a decentralized identifier
-(DID) due to a compromised private key, pre-rotation keys are
-introduced. These commitments, made by the DID Controller, are
-declarations about the authorization keys that will be published in future
-versions of the DID log, without revealing the keys themselves.</p>
-<p>The primary goal of pre-rotation keys is to ensure that even if an attacker
-gains access to the current active key, they will not be able to take control of
-the DID. This safeguard is achieved because the attacker could not simply rotate to
-a key they generate and control. Rather, they would need to have also
-compromised the unpublished (and presumably securely stored) pre-rotation key in
-order to rotate the DID keys.</p>
-<p>The cost of having pre-rotation protection is a more complicated process to update
-the keys of a DID. The following are some considerations we have come across in
-thinking about how to use the pre-rotation feature. The feature adds a
-layer of key management complexity in return for the benefit.</p>
-<h2 id="key-rotation-with-pre-rotation">Key Rotation with Pre-Rotation<a class="headerlink" href="#key-rotation-with-pre-rotation" title="Permanent link">&para;</a></h2>
-<p>In using pre-rotation, a DID Controller should generate an "active" key
-for the DIDDoc that is accessible for "production" purposes (signing,
-decrypting), and generates the "next key" in an isolated location from
-production. This prevents both the "active" and "next key" from being compromised in the
-same intrusion attack. For example, if an intruder gets into your infrastructure and is able to extract all of your
-private keys both DID control keys would be lost. Thus, we expect the feature to be used as follows:</p>
+<h1 id="understanding-didwebvh-did-log-entry-details">Understanding did:webvh DID Log Entry Details<a class="headerlink" href="#understanding-didwebvh-did-log-entry-details" title="Permanent link">&para;</a></h1>
+<p>This tutorial will help you understand each step in the creation of <code>did:webvh</code> DID log entries, a crucial part of the <code>did:webvh</code> DID Method. The entry log contains the verifiable record of all the updates made to a did:webvh DID, moving the "trust" of a <code>did:webvh</code> DID from DNS to the verifiable log. DNS is still important for discoverability, but the log is where confidence in the provenance of the DID is maintained. In this tutorial we will carry out the manual steps to create a <code>did:webvh</code> DID, inspecting the inputs and outputs of each step, and the resulting entry log. In a real deployment, this all happens automatically, but understanding the steps will help you understand how the <code>did:webvh</code> method works, and how to integrate it into your own applications.</p>
+<h2 id="audience">Audience<a class="headerlink" href="#audience" title="Permanent link">&para;</a></h2>
+<p>This tutorial is anyone who wants to understand the details of how the <code>did:webvh</code> method works, including the low level steps in creating and updating <code>did:webvh</code> DIDs. This includes those interested in the DID Method, and those tasked with integrating the existing implementations into their technical stack, or developing their own implementation of the DID Method.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The DID Controller creating the DID would request from an isolated
-  service the hash of the "next key" as defined in this specification. For
-  example, an entity might have the "active" DID/key hosted by one Cloud
-  Provider, and the "next key" by another, on the theory that an attacker might
-  get into one environment or another but not both.</li>
-<li>When a key rotation is to be done, two entries are put in the log, using the following steps by the DID Controller:</li>
-<li>Get the full key reference entry from the isolated service for the pre-rotation "nextKey".</li>
-<li>Locally generate a pre-rotation key hash for a new key that will soon become the "active" key.</li>
-<li>Add a DID log entry that includes the properties from the previous two steps, and signs the proof using an authorized key (that presumably it controls, though not required).<ol>
-<li>Although the DID log could be published now, it is probably best to hold off and publish it after adding a second, as described by the rest of the steps.</li>
-</ol>
-</li>
-<li>Get a new pre-rotation hash from the isolated service.</li>
-<li>Get the full key-rotation key reference for the pre-rotation hash created for the last DID log entry.</li>
-<li>Add a DID Log entry that includes the properties from the previous two step</li>
-<li>If the key rotated in the previous DID log entry was a/the
-     authorized key to make updates to the DID, call the isolated service to produce
-     the Data Integrity proof over the entry using the key the isolated
-     service controls.<ol>
-<li>This step is not needed if the active service has a key authorized to sign the DIDDoc update.</li>
-</ol>
-</li>
-<li>Publish the new DID log containing the two new entries.</li>
+<li>Basic understanding of DIDs and the <code>did:webvh</code> method, including terms like SCID (self-certifying identifiers), Data Integrity proofs, JSON, and verifiable credentials.</li>
+<li>Access to and familiarity with command line tools.</li>
+<li>A docker environment set up on your machine.</li>
+<li>Note, you could use GitHub CodeSpaces or <a href="https://labs.play-with-docker.com/">Play With Docker</a> if you don't have Docker installed locally.</li>
+<li>A GitHub account, and the ability to create and clone a repository, and run git commands.</li>
 </ul>
-<h2 id="post-quantum-attacks">Post Quantum Attacks<a class="headerlink" href="#post-quantum-attacks" title="Permanent link">&para;</a></h2>
-<p>One of the potential benefits of this approach to pre-rotation is that it is
-"post-quantum safe". The idea is that in a post-quantum world, the availability
-of the published key and signatures may enable the calculation of the
-corresponding private key. Since the pre-rotation value is a hash of the
-<code>nextKey</code> and not the public key itself, a post-quantum attack would not
-compromise that key, and so a further rotation by the attacker would not be
-possible. If there was a (suspected) need to transition to using a quantum-safe
-key, the same process listed above would be used, but key reference and the
-pre-rotation hash added into the second DID log entry would presumably
-both be for quantum-safe keys.</p>
-<h2 id="challenges-in-using-pre-rotation">Challenges in Using Pre-Rotation<a class="headerlink" href="#challenges-in-using-pre-rotation" title="Permanent link">&para;</a></h2>
-<p>Key management is hard enough without having to maintain isolated key generation
-environments for creating keys for different purposes. Enabling connectivity between
-the key generation environments to enable automated key rotation while maintaining the
-key recovery environment as "isolated" is technically challenging.</p>
+<h2 id="step-1-setting-up-your-environment">Step 1: Setting up Your Environment<a class="headerlink" href="#step-1-setting-up-your-environment" title="Permanent link">&para;</a></h2>
+<p>The tutorial is run from a clone of a GitHub repo that you control and into which your DIDs will be published. We'll use GH-Pages as the DID hosting mechanism.</p>
+<p>To set up the environment:</p>
+<ul>
+<li>Go to the <a href="https://github.com/OpSecId/didwebvh-tutorial">did:webvh Tutorial GitHub template repository</a> in you browser.</li>
+<li>Click the "Use this template" button, choose the "Create a new repository" button, and create the new repository in your GitHub account. We recommend using the name <code>didwebvh-tutorial</code>.</li>
+<li>In your new repository, go into the <code>Settings</code>, <code>Pages</code>, and activate GitHub Pages using the <code>main</code> branch/root folder as the source. This will allow you to publish your <code>did:webvh</code> DID Log file at <code>https://&lt;your-username&gt;.github.io/didwebvh-tutorial/did.jsonl</code>.</li>
+<li>Go the command line where you will run the tutorial and clone the repository you just created by running:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;your-username&gt;/didwebvh-tutorial.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>didwebvh-tutorial
+</code></pre></div>
+<p>Next, up we need to create the docker images you will be using and bring up the containers. The <code>docker-compose.yml</code> file in the repository defines the services we will be using, including an instance of <a href="https://aca-py.org/">ACA-Py</a> for running the cryptographic commands and managing the <code>did:webvh</code> DID and key pairs, and a webvh CLI to interact with the ACA-Py agent and generate the DID log entries. Run these commands:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>--build
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>webvh-tutorial-cli<span class="w"> </span>webvh<span class="w"> </span><span class="c1"># To verify that the webvh CLI is running</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">alias</span><span class="w"> </span>webvh-cli<span class="o">=</span><span class="s2">&quot;docker exec webvh-tutorial-cli webvh&quot;</span><span class="w">  </span><span class="c1"># Create an alias for convenience</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>webvh-cli<span class="w"> </span>--help<span class="w"> </span><span class="c1"># To verify that the webvh CLI is working directly</span>
+</code></pre></div>
+<p>Tips:</p>
+<ul>
+<li>If you ever want to reset the environment, add the <code>--force-recreate</code> option to the <code>docker compose up</code> command. This will recreate the containers and reset the state.</li>
+<li>To stop the running containers, you can use the <code>docker compose down</code> command.</li>
+<li>As you run the commands, take a look at the <code>outputs</code> folder (<code>ls -al outputs</code>) to see the files that are created. Take a look at the files that created and updated as you go.</li>
+</ul>
+<h2 id="step-2-your-first-didwebvh-log-entry">Step 2: Your First did:webvh Log Entry<a class="headerlink" href="#step-2-your-first-didwebvh-log-entry" title="Permanent link">&para;</a></h2>
+<p>Now that we have our environment set up, we can start creating our <code>did:webvh</code> DID. We'll run the a number of CLI commands to build up the first log entry of our new <code>did:webvh</code> DID.</p>
+<ol>
+<li>We need to start with the HTTP URL where your new DID will reside. In this case, we're going to put it at the root of the GH Pages published from your new repository -- at <code>https://&lt;your-username&gt;.github.io/didwebvh-tutorial</code>. This URL will be the origin of your DID.<ol>
+<li>Run: <strong><code>webvh-cli new-did --origin https://&lt;your-username&gt;.github.io/didwebvh-tutorial</code></strong></li>
+<li>The output of the command (file <code>outputs/did.json</code>) contains a "templatized" version of what will be the initial DID document. We're using the simplest DID Document possible, containing only the minimum required data (according to the <a href="https://www.w3.org/TR/did-core/">DID Core Specification</a>) -- the JSON-LD context, and the ID of the DID itself. "Templatized" means that it contains placeholders (<code>{SCID}</code>) for the SCID -- that will be calculated and inserted later. Like any DID Controller, you can populate this DID Document with whatever (valid) content you like. If you add more references to the DID, make sure to use the <code>{SCID}</code> literal wherever it is needed.</li>
+</ol>
+</li>
+<li>Next we'll define the <code>did:webvh</code> DID parameters for the DID. Again, we are going to stick to the minimum required by the <code>did:webvh</code> spec -- just the SCID, the method, and a single "authorization key" that will be used to demonstrate the authority to create and update the DID.<ol>
+<li>Run: <strong><code>webvh-cli new-key</code></strong>, which will use the ACA-Py instance to create an Ed25519 key pair, printing the multikey public key as the command output. The private key will be held safely in the ACA-Py agent. and used to sign proofs in later steps.</li>
+<li>Run: <strong><code>webvh-cli did-params --method 0.5 --update-key &lt;pub-auth-key&gt;</code></strong>, where <code>&lt;pub-auth-key&gt;</code> is the public key of the authorization key created by the previous command.</li>
+<li>The output (file <code>outputs/parameters.json</code>) contains the parameters JSON for your new DID, including the public authorization key, the version of the <code>did:webvh</code> spec you are using, and the SCID (as a placeholder <code>{SCID}</code>).</li>
+</ol>
+</li>
+<li>Next we will combine what we have so far into the SCID input file, so we'll be ready to generate the SCID.<ol>
+<li>Run: <strong><code>webvh-cli gen-scid-input --version-time &lt;datetime&gt;</code></strong>, where <code>&lt;datetime&gt;</code> is the current date and time in ISO 8601 format (e.g., <code>2023-10-01T12:00:00Z</code>).</li>
+<li>Normally, the DID generation software would set the <code>versionTime</code> to the current time, but for this tutorial, we want to show that it is the DID Controller setting that -- self-attested.</li>
+<li>Review the output (file <code>cat outputs/scid_input.json</code>), which contains something that looks like a DID log entry, with the SCID placeholder where the SCID is needed.</li>
+</ol>
+</li>
+<li>Generate the SCID.<ol>
+<li>Run: <strong><code>webvh-cli gen-scid-value</code></strong>. The output is the SCID for your DID. It will be different every time you run this tutorial, as it minimum, the authorization key will be different. This step updates the file <code>cat outputs/draft_log_entry.json</code>.</li>
+</ol>
+</li>
+<li>Populate the <code>versionId</code> by generating a hash over the DID log entry as it currently stands.<ol>
+<li>Run: <strong><code>webvh-cli gen-version-id</code></strong>.</li>
+<li>The output (file <code>outputs/log_entry.json</code>) contains most of the DID Log Entry. Missing is just the Data Integrity proof, which will be added in the next step.</li>
+</ol>
+</li>
+<li>Generate the Data Integrity proof demonstrating the authority to create/update a DID Log Entry.<ol>
+<li>Run: <strong><code>webvh-cli add-proof --update-key &lt;pub-auth-key&gt;</code></strong>, where the <code>&lt;pub-auth-key&gt;</code> is the public key of the authorization key created earlier. You can copy it from the <code>updateKeys</code> element of the output of the previous command. The proof is generated by the CLI calling to the ACA-Py agent, passing in the public key (enabling the private key to be found), and the log entry to be signed.</li>
+<li>The output (file <code>outputs/log_entry.json</code>) is the complete DID Log Entry, including the Data Integrity proof.</li>
+</ol>
+</li>
+<li>Finally, we will update the (currently empty) DID Log file, adding our new Entry into the log file. We'll do this step after we finish preparing each log entry.<ol>
+<li>Run: <strong><code>webvh-cli new-line</code></strong>, which will take the log entry <code>outputs/log_entry.json</code>, remove all the unnecessary white space (per the <a href="https://jsonlines.org/">JSON Lines</a> specification) and append it to the DID Log file <code>outputs/did.jsonl</code>. Our new log entry is ready for publication. As an added bonus, the command also updates the <code>outputs/did.json</code>, the [<code>did:web</code>] equivalent of our <code>did:webvh</code> DID.</li>
+<li>Take a look at the files <code>outputs/did.jsonl</code> (<code>did:webvh</code> Log File) and <code>outputs/did.json</code> (<code>did:web</code> DID Document).</li>
+</ol>
+</li>
+</ol>
+<p>We have our first <code>did:webvh</code> DID ready for publication! At this point, you would typically have some sort of automated process to publish the <code>did:webvh</code> DID Document to the right place on the web. For example, ACA-Py has a <a href="https://plugins.aca-py.org/latest/webvh/">did:webvh plugin</a> that interacts with the <a href="https://github.com/decentralized-identity/didwebvh-server-py">did:webvh Server</a> to publish the DID. But we'll go old school in this tutorial and have you publish the DID Document by committing files to your GitHub repository.</p>
+<h2 id="step-3-publishing-your-didwebvh-log-file">Step 3: Publishing Your did:webvh Log File<a class="headerlink" href="#step-3-publishing-your-didwebvh-log-file" title="Permanent link">&para;</a></h2>
+<p>Now that we have our <code>did:webvh</code> DID Log file ready, we can publish it to the web. This is done by committing changes in your GitHub repository.</p>
+<ol>
+<li>From the command line, copy the files <code>did:webvh</code> and <code>did:web</code> files to the root of your repository with the command <strong><code>cp outputs/did.jsonl outputs/did.json .</code></strong>.</li>
+<li>Check your git status (<strong><code>git status</code></strong>), and if all is good, add the files to your Git staging area with the command <strong><code>git add did.jsonl did.json</code></strong>.</li>
+<li>Commit the changes with the command <strong><code>git commit -m "Add did:webvh DID Log file"</code></strong>.</li>
+<li>Push the changes to your GitHub repository with the command <strong><code>git push origin main</code></strong>. That should push the changes to your repository, and you should see the two new files appear in your repository via GitHub interface.</li>
+<li>To see if everything is working, let's see if we can resolve your DIDs using the DIF Universal Resolver.</li>
+<li>View the <code>did:web</code> DID Document (<code>cat did.json</code>) and copy the <code>alsoKnownAs</code> value from the DID Document. This is your <code>did:webvh</code> DID.</li>
+<li>Go to the <a href="https://dev.uniresolver.io/">Universal Resolver</a> (from the <a href="https://identity.foundation/">Decentralized Identity Foundation</a>) and paste your <code>did:webvh</code> DID into the input box, and click "Resolve". Your <code>did:webvh</code> DID should be resolved.<ol>
+<li>Didn't work? Did you remember to set up GitHub Pages for your repository? If not, go back to the <a href="#step-1-setting-up-your-environment">Step 1: Setting up Your Environment</a> section and make sure do that, and the GH-Pages have been published.</li>
+</ol>
+</li>
+<li>Click the "View DID Document" button to see the DID Document that was generated from the Log Entry. Also look at the DID Metadata, to see what is returned by the <code>did:webvh</code> resolver.</li>
+<li>Remove the <code>vh:</code> and the SCID in the DID input box so that now have the <code>did:web</code> DID that you also published. Click "Resolve" and your <code>did:web</code> DID should be resolved. Again, look at the DID Document and the DID Metadata to see what is returned by the <code>did:web</code> resolver for your DID.</li>
+</ol>
+<p>You might notice in the resolved <code>did:webvh</code> DID Document there are two DID <code>services</code> that are not in original DID Document that became the value of the <code>state</code> attribute in the Log entry. This is because the <code>did:webvh</code> method is defined to automatically add those services to the DID Document when it is resolved if they are not explicitly defined in the DID Document by the DID Controller.</p>
+<ul>
+<li>The first is <code>#files</code> service, which results in DID URL paths to be found by using the same DID-To-HTTP transformation as for the DID itself, meaning that <code>&lt;did&gt;/path/to/file</code> will resolve to <code>&lt;http URL&gt;/path/to/file</code> as one would expect for a web-based DID Method.</li>
+<li>The second is the <code>#whois</code> service, that is described in the <a href="https://identity.foundation/didwebvh/v1.0/#the-whois-use-case">whois</a> section of the did:webvh specification.</li>
+</ul>
+<p>For information on these services, see the <a href="https://identity.foundation/didwebvh/v1.0/#did-url-resolution">DID URL Resolution</a> section of the <code>did:webvh</code> specification.</p>
+<p>Congratulations! You have successfully created and published your first <code>did:webvh</code> DID Log file.</p>
+<h2 id="step-4-updating-your-didwebvh-did">Step 4: Updating Your did:webvh DID<a class="headerlink" href="#step-4-updating-your-didwebvh-did" title="Permanent link">&para;</a></h2>
+<p>Now that we have our first <code>did:webvh</code> DID published, let's update it. The process is similar to creating the initial DID, but with some steps skipped. Depending on the goal of the update, we might change the our DID Document, are parameters, or both. In this example, we will update the DID Document to add a new key pair, and the related <code>verificationMethod</code> in the DID Document. We'll leave the parameters unchanged, but you could change them if you wanted to.</p>
+<ol>
+<li>Create a new key pair and add the public key as a <code>verificationMethod</code> in the DID Document.<ol>
+<li>Run: <strong><code>webvh-cli new-key</code></strong>. As before, this will create a new Ed25519 key pair, printing the multikey public key as the command output. The private key will be held safely in the ACA-Py agent. If you want a different key type for your DID's <code>verificationMethod</code>, you will have to use the ACA-Py agent directly to create the key pair and produce the multikey representation of its public key. As noted in the <code>did:webvh</code> spec, while the <code>did:webvh</code> authorization key <strong>MUST</strong> be of a type defined in the specification (which, for v1.0 is only Ed25519), the DID Document may use any key type that meets the needs of the DID Controller.</li>
+<li>Run: <strong><code>webvh-cli add-vm --multikey &lt;pub-new-key&gt;</code></strong>, where <code>&lt;pub-new-key&gt;</code> is the public key of the new key pair created by the previous command.<ol>
+<li>The output (file <code>outputs/draft_log_entry.json</code>) contains the draft DID Log Entry, with the new <code>verificationMethod</code> added to the DID Document. Since we are changing the parameters, the <code>parameters</code> attribute could be just <code>{}</code>, indicating no changes. If you are adventurous, you could create a new authorization key for the DID, and update the <code>updateKeys</code> array to use its public multikey. While that will not affect what we do in the current DID update, it will change the authorization key used for a subsequent update.</li>
+<li>Note in the <code>outputs/draft_log_entry.json</code> file that the <code>versionId</code> is still the <code>versionId</code> from the first Log entry. This is required by the <code>did:webvh</code> specification, resulting in the <code>versionId</code> for each entry being dependent on the previous entry. This is what creates the chain of trust in the <code>did:webvh</code> Log.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Generate the <code>versionid</code> for the new Log Entry.<ol>
+<li>Run: <strong><code>webvh-cli gen-version-id</code></strong>.</li>
+<li>The output (file <code>outputs/log_entry.json</code>) contains the DID Log Entry, including the updated <code>versionId</code> value.</li>
+</ol>
+</li>
+<li>Add the Data Integrity proof to the Log Entry.<ol>
+<li>Run: <strong><code>webvh-cli add-proof --update-key &lt;pub-auth-key&gt;</code></strong>, where <code>&lt;pub-auth-key&gt;</code> is the public key of the authorization key created earlier. If you put a new authorization key in the parameters of this update, you still use the key from the <em>first entry</em> for this command. The new one would not be used until the next update. Trying to use the new authorization key for this update will result in an error.</li>
+<li>The output (file <code>outputs/log_entry.json</code>) is the complete DID Log Entry, including the Data Integrity proof.</li>
+</ol>
+</li>
+<li>And as we did with the first log entry, the last pre-publication step is to add our new log entry to the DID Log file.<ol>
+<li>Run: <strong><code>webvh-cli new-line</code></strong>, which will take the log entry (<code>outputs/log_entry.json</code>), do the <a href="https://jsonlines.org/">JSON Lines</a> processing, and append it to the DID Log file <code>outputs/did.jsonl</code>. Our update log file is ready for publication, as is the <code>did:web</code> DID Document (<code>outputs/did.json</code>) -- updated to match the <code>did:webvh</code> DID.</li>
+<li>Take a look at the files <code>outputs/did.jsonl</code> (<code>did:webvh</code> Log File) and <code>outputs/did.json</code> (<code>did:web</code> DID Document).</li>
+</ol>
+</li>
+<li>Last set of commands -- repeat all of the "Step 3: Publishing Your did:webvh Log File" <a href="#step-3-publishing-your-didwebvh-log-file">steps</a> to publish the updated DID Log file to your GitHub repository, and use the <a href="https://dev.uniresolver.io/">Universal Resolver</a> to resolve the DID to see its updates.</li>
+</ol>
+<p>Congratulations! You have successfully updated your <code>did:webvh</code> DID Log file! You can now use this DID to create and manage DIDs in the <code>did:webvh</code> method, and you can continue to update it as needed.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>In this tutorial, you have learned the manual steps in creating and updating a <code>did:webvh</code> DID, and one (also manual) way to publish that DID. While a production deployment will have a much higher level of automation, we hope this tutorial has shown you the underlying mechanics of how the method works, and how the entry log is used to maintain the verifiability of the DID, independent of its DNS location. Armed with this knowledge, you can extend your decentralized identity capabilities by deploying the <code>did:webvh</code> [implementations](../implementations.md available today, or creating your own implementation to meet your specific needs.</p>
+<p>There are additional features and capabilities in the <code>did:webvh</code> DID method, such as portability, pre-rotation, watchers and witnesses not covered in this tutorial. As well, there are other tools, such as the <a href="https://github.com/decentralized-identity/didwebvh-server-py">did:webvh Server</a>, and capabilities for building verifiable credential support rooted in <code>did:webvh</code> (such as support for <a href="https://identity.foundation/didwebvh/anoncreds-method/">AnonCreds with did:webvh</a>).</p>
+<p>You can continue to explore the <code>did:webvh</code> method by creating more DIDs, updating them, and experimenting with different parameters and DID Documents. The <code>did:webvh</code> method is designed to be flexible and extensible, allowing you to create DIDs that meet your specific needs.
+If you have any questions or feedback about this tutorial, please feel free to reach out via issues in the <a href="https://github.com/OpSecId/didwebvh-tutorial">did:webvh Tutorial GitHub template repository</a>, the <a href="https://github.com/decentralized-identity/didwebvh">did:webvh specification repository</a> or via the <code>did:webvh</code> channel on <a href="https://identity.foundation/slack/">DIF Slack</a>.</p>
 
 
 
@@ -1458,7 +1601,7 @@ key recovery environment as "isolated" is technically challenging.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../did-valid-keys/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What Are A DID&#39;s Valid Keys?">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: did:webvh Demos">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1468,20 +1611,20 @@ key recovery environment as "isolated" is technically challenging.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                What Are A DID's Valid Keys?
+                did:webvh Demos
               </div>
             </div>
           </a>
         
         
           
-          <a href="../did-portability/" class="md-footer__link md-footer__link--next" aria-label="Next: DID Portability">
+          <a href="../../root_README/" class="md-footer__link md-footer__link--next" aria-label="Next: How to Contribute">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                DID Portability
+                How to Contribute
               </div>
             </div>
             <div class="md-footer__button md-icon">
