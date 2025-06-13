@@ -99,8 +99,8 @@ nav:
 - A `did:webvh` Example Log:
     - did:webvh DID Log Example: example.md
 - Implementations:
-    - did:webvh Registrars/Resolvers: implementations.md
-    - did:webvh Web Server: didwebvh-server.md
+    - did:webvh Implementations: implementations/README.md
+    - did:webvh Deployments: implementations/deployments.md
 - Demos:
     - did:webvh Demos: demos/README.md
     - Tutorial -- Understanding did:webvh DID Log Entry Details: demos/understanding_didwebvh.md
