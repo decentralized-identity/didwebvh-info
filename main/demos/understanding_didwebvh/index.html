@@ -1477,18 +1477,18 @@
 </li>
 <li>Next we'll define the <code>did:webvh</code> DID parameters for the DID. Again, we are going to stick to the minimum required by the <code>did:webvh</code> spec -- just the SCID, the method, and a single "authorization key" that will be used to demonstrate the authority to create and update the DID.<ol>
 <li>Run: <strong><code>webvh-cli new-key</code></strong>, which will use the ACA-Py instance to create an Ed25519 key pair, printing the multikey public key as the command output. The private key will be held safely in the ACA-Py agent. and used to sign proofs in later steps.</li>
-<li>Run: <strong><code>webvh-cli did-params --method 0.5 --update-key &lt;pub-auth-key&gt;</code></strong>, where <code>&lt;pub-auth-key&gt;</code> is the public key of the authorization key created by the previous command.</li>
+<li>Run: <strong><code>webvh-cli did-params --method 1.0 --update-key &lt;pub-auth-key&gt;</code></strong>, where <code>&lt;pub-auth-key&gt;</code> is the public key of the authorization key created by the previous command. While <code>method</code> (currently) defaults to 1.0, we wanted to highlight that defining the specification version controls how the entries are processed, what cryptography can be used, and other deployment details. See the <a href="https://identity.foundation/didwebvh/v1.0/#cryptographic-agility">cryptographic agility</a> section of the <code>did:webvh</code> specification.</li>
 <li>The output (file <code>outputs/parameters.json</code>) contains the parameters JSON for your new DID, including the public authorization key, the version of the <code>did:webvh</code> spec you are using, and the SCID (as a placeholder <code>{SCID}</code>).</li>
 </ol>
 </li>
 <li>Next we will combine what we have so far into the SCID input file, so we'll be ready to generate the SCID.<ol>
-<li>Run: <strong><code>webvh-cli gen-scid-input --version-time &lt;datetime&gt;</code></strong>, where <code>&lt;datetime&gt;</code> is the current date and time in ISO 8601 format (e.g., <code>2023-10-01T12:00:00Z</code>).</li>
+<li>Run: <strong><code>webvh-cli gen-scid-input --version-time &lt;datetime&gt;</code></strong>, where <code>&lt;datetime&gt;</code> is the current date and time in ISO 8601 format (e.g., <code>2025-06-01T17:00:00Z</code>).</li>
 <li>Normally, the DID generation software would set the <code>versionTime</code> to the current time, but for this tutorial, we want to show that it is the DID Controller setting that -- self-attested.</li>
 <li>Review the output (file <code>cat outputs/scid_input.json</code>), which contains something that looks like a DID log entry, with the SCID placeholder where the SCID is needed.</li>
 </ol>
 </li>
 <li>Generate the SCID.<ol>
-<li>Run: <strong><code>webvh-cli gen-scid-value</code></strong>. The output is the SCID for your DID. It will be different every time you run this tutorial, as it minimum, the authorization key will be different. This step updates the file <code>cat outputs/draft_log_entry.json</code>.</li>
+<li>Run: <strong><code>webvh-cli gen-scid-value</code></strong>. The output is the SCID for your DID. It will be different every time you run this tutorial, as it minimum, the authorization key will be different. This step updates the file <code>outputs/draft_log_entry.json</code> if you want to check it out.</li>
 </ol>
 </li>
 <li>Populate the <code>versionId</code> by generating a hash over the DID log entry as it currently stands.<ol>
