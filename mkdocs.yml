@@ -91,6 +91,7 @@ nav:
     - Why JSON Lines?: faq/JSONLines.md
     - How fast is did:webvh?: faq/Performance.md
     - Why a separate Witness File?: faq/WitnessFile.md
+    - How is DID Duplicity Handled in did:webvh?: faq/Duplicity.md
 - Implementer's Guide:
     - The `did:webvh` Implementer's Guide: implementers-guide/README.md
     - Implementing a `did:webvh` Resolver: implementers-guide/resolver-algorithm.md
