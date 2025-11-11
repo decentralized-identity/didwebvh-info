@@ -95,7 +95,7 @@ nav:
 - Implementer's Guide:
     - The `did:webvh` Implementer's Guide: implementers-guide/README.md
     - Implementing a `did:webvh` Resolver: implementers-guide/resolver-algorithm.md
-    - did:webvh Resolution Error Codes: implementers-guide/resolution-errors.md
+    - did:webvh Resolution Error Codes: resolution-errors.md
     - What Are A DID's Valid Keys?: implementers-guide/did-valid-keys.md
     - Using Pre-Rotation keys: implementers-guide/prerotation-keys.md
     - DID Portability: implementers-guide/did-portability.md

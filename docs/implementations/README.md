@@ -12,14 +12,14 @@ The following are complete implementations of `did:webvh` that support the full 
 
 - [DIF] -- [Typescript](https://github.com/decentralized-identity/didwebvh-ts)
 - [DIF] -- [Python](https://github.com/decentralized-identity/didwebvh-py)
-- [Affinidi] -- [Rust](https://github.com/affinidi/affinidi-tdk-rs/tree/main/crates/affinidi-did-resolver/affinidi-did-resolver-methods/did-webvh), [Crate](https://crates.io/crates/did-webvh)
+- [Affinidi] at [DIF] -- [Rust](https://github.com/decentralized-identity/didwebvh-rs), [Crate](https://crates.io/crates/did-webvh)
 
 ## Partial/PoC Implementations
 
 These implementations are known, but are either incomplete or not fully compliant with the latest specification. They may be useful for building out new implementations.
 
 - [Nuts Foundation] -- [Go](https://github.com/nuts-foundation/trustdidweb-go) (Registrar/Resolver)
-- [DIF] -- [Rust](https://github.com/decentralized-identity/didwebvh-rs)  (Registrar/Resolver)
+- [DIF] -- [Rust-v0.5](https://github.com/decentralized-identity/didwebvh-rs-v0.5)  (Experimental Registrar/Resolver)
 
 ## Other Implementations
 

@@ -20,8 +20,13 @@ When DID resolution fails, `did:webvh` resolvers **MUST** return an `error` fiel
 
 The `problemDetails` object includes the following fields:
 
-- `type`: A URI pointing to this page, with a fragment identifier representing the error code from the [list below](#resolution-error-codes). For example:  
+- `type`: A URI pointing to this page, with a fragment identifier representing
+  the error code from the [list below](#resolution-error-codes). For example the
+  [did-log-id-mismatch](https://didwebvh.info/main/resolution-errors/#did-log-id-mismatch)
+  error code defined below has the `type` value:
+
   `https://didwebvh.info/main/resolution-errors/#did-log-id-mismatch`
+
 - `title`: A human-readable title for the error, matching the one listed in the section for the corresponding error code below.
 - `detail`: A more specific message describing the error encountered, suitable for developers or technical users.
 
@@ -31,7 +36,7 @@ Resolver implementers **SHOULD** use the `type` and `title` values below and **M
 
 ## Implementer Guidance
 
-Resolver implementers should use the errors listed below as standardized codes for communicating resolution failures. If your resolver needs to report an error not listed here, you are encouraged to contribute to this list via a pull request to the [did:webvh information site GitHub repository](https://github.com/did-webvh-info). Please ensure your proposed error includes:
+Resolver implementers should use the errors listed below as standardized codes for communicating resolution failures. If your resolver needs to report an error not listed here, you are encouraged to contribute to this list via a pull request to the [did:webvh information site GitHub repository](https://github.com/didwebvh-info). Please ensure your proposed error includes:
 
 - A clear and unique error code (used as the fragment in the `type` URI)
 - A descriptive title
