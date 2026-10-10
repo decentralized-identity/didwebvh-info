@@ -6,21 +6,21 @@ implementation's repository for details on features and capabilities. Please
 let us know (or submit a PR) if you have an implementation that is not listed
 here, or if you want to update how your implementation is described.
 
-The [`did:webvh` Implementations website] and repository is used for
-interoperability and conformance testing to ensure that each implementation is
-compliant with the specification and can interoperate with other
-implementations. The goal is to ensure that the `did:webvh` method is
+The [`did:webvh` Test Suite](test-suite.md) is used to check that
+implementations conform to the specification and interoperate with one another.
+Each implementation in the test suite generates its own DID logs and resolves
+every other implementation's logs, and any differences are taken to the Working
+Group as questions about the specification. The goal is for `did:webvh` to be
 implemented consistently across a wide range of programming languages and
-platforms. As implementations mature, they can be added to the repository and
-website.
+platforms. New implementations are welcome to join the test suite.
 
 ## Full Implementations
 
 The following are complete implementations of `did:webvh` that support the
 full set of features and capabilities defined in the current specification.
-They have been tested for interoperability, and the developers have been
-comparing notes and providing feedback to one another and to the Working Group
-to clarify the specification and help future implementors.
+They are in the [`did:webvh` Test Suite](test-suite.md), and their developers
+have been comparing notes and providing feedback to one another and to the
+Working Group to clarify the specification and help future implementers.
 
 - [DIF] -- [Typescript](https://github.com/decentralized-identity/didwebvh-ts)
 - [DIF] -- [Python](https://github.com/decentralized-identity/didwebvh-py)
@@ -33,6 +33,17 @@ to clarify the specification and help future implementors.
   environment requirements. Also includes developer convenience functions for
   witness operations, improved error messages, and an optional HTTP client
   (gated behind a feature flag).
+- [DIF] -- [Java](https://github.com/decentralized-identity/didwebvh-java) --
+  Create, update, resolve, migrate and deactivate DIDs, with pre-rotation,
+  witnesses, publishing a parallel `did:web` document, a pluggable signer
+  interface, and an interactive wizard CLI.
+- [EECC] -- [Java](https://github.com/european-epc-competence-center/didwebvh)
+  (`de.eecc.did:webvh` on Maven Central) -- Create, update, resolve and
+  deactivate DIDs, with key rotation, pre-rotation and witnesses.
+- [DIF] -- [Dart](https://github.com/decentralized-identity/didwebvh-dart) --
+  A pure-Dart port of the DIF
+  Java implementation, with the same features. Signing is through an
+  asynchronous signer interface, so keys can be held in a KMS or HSM.
 
 ## Partial/PoC Implementations
 
@@ -65,6 +76,11 @@ implementations, such as servers, watchers and resolvers.
 - [DIF] -- [`did:webvh` Universal Resolver Driver](https://github.com/decentralized-identity/uni-resolver-driver-did-webvh)
   -- based on the [Typescript](https://github.com/decentralized-identity/didwebvh-ts)
   implementation.
+- [DIF] -- [ThisDID Universal Resolver](https://github.com/decentralized-identity/thisdid)
+  ([thisdid.com](https://thisdid.com)) -- A universal DID resolver, built by
+  [GoPlausible] and donated to DIF, whose `did:webvh` driver wraps the
+  [Typescript](https://github.com/decentralized-identity/didwebvh-ts)
+  implementation. Its `did:webvh` resolver is in the [Test Suite](test-suite.md).
 
 Note that the DIF [Rust](https://github.com/decentralized-identity/didwebvh-rs)
 implementation includes all of the same components (Registrar, Resolver,
@@ -101,6 +117,8 @@ framework.
 [Nuts Foundation]: https://nuts.foundation
 [Procivis]: https://procivis.ch
 [Affinidi]: https://affinidi.com
+[EECC]: https://eecc.de
+[GoPlausible]: https://goplausible.com
 [OWF]: https://openwallet.foundation
 [ACA-Py]: https://aca-py.org
 [Credo-TS]: https://credo.js.org/

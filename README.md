@@ -22,7 +22,7 @@ Markdown files in the site's [GitHub repository].
 [MkDocs Material]: https://squidfunk.github.io/mkdocs-material/
 [GitHub Repository]: https://github.com/decentralized-identity/didwebvh-info
 
-Contributions can be mode via pull requests (PRs) to the GitHub repository that will
+Contributions can be made via pull requests (PRs) to the GitHub repository that will
 be reviewed and (if relevant) merged. You can use the GitHub website itself to add or
 edit files, or fork the repo and edit them in your favorite GitHub-friendly
 editor.  Each commit of a PR must have a DCO (Developer Certificate of Origin -
@@ -31,7 +31,47 @@ automagically on the GitHub website or, if done from the command line, by adding
 the `-s` (lower case) option on the `git commit` command (e.g., `git commit -s
 -m "Comment about the commit"`).
 
-If you are running locally and want to test your changes before creating your
-pull request, you must install and run `mkdocs`. Guidance for that can be found in the
-[MkDocs Material] documentation. Once it is installed, run `mkdocs` from the
-root folder and open your browser to the indicated site.
+### Previewing the Site Locally
+
+To check your changes before creating your pull request, build and serve the
+site locally. From the root folder of the repository:
+
+1. Install the same versions of MkDocs Material and `mike` that the
+   publishing workflow uses (a Python virtual environment is a good idea):
+
+    ```bash
+    pip install -r mkdocs-requirements.txt
+    ```
+
+2. Copy the Markdown files from the root folder (this `README.md`,
+   `CONTRIBUTOR.md` and `CODE_OF_CONDUCT.md`) into the `docs` folder:
+
+    ```bash
+    ./scripts/prepmkdocs.sh
+    ```
+
+    The "Contributing" pages of the site are built from these files. The
+    script copies each one into `docs` as `root_<name>.md`. Without this step
+    the "Contributing" pages are missing (404) in your local site.
+
+3. Serve the site, and open your browser to the address it shows (usually
+   <http://127.0.0.1:8000>). The site reloads as you edit the files.
+
+    ```bash
+    mkdocs serve
+    ```
+
+4. When you are done, remove the copied files so they aren't committed:
+
+    ```bash
+    ./scripts/prepmkdocs.sh clean
+    ```
+
+Edit the root Markdown files themselves, not the `root_*.md` copies in the `docs` folder,
+which are overwritten each time the script is run.
+
+The published site is built the same way: the [publish-docs workflow] runs
+`scripts/prepmkdocs.sh` and then uses `mike` to publish the `main` branch as the
+`latest` version of the site.
+
+[publish-docs workflow]: https://github.com/decentralized-identity/didwebvh-info/blob/main/.github/workflows/publish-docs.yml
