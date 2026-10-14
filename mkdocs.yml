@@ -105,6 +105,7 @@ nav:
     - did:webvh DID Log Example: example.md
 - Implementations:
     - did:webvh Implementations: implementations/README.md
+    - did:webvh Test Suite: implementations/test-suite.md
     - did:webvh Adoption: implementations/adoption.md
 - Demos:
     - did:webvh Demos: demos/README.md

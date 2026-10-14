@@ -1,0 +1,2 @@
+# Copies of the root Markdown files made by scripts/prepmkdocs.sh
+docs/root_*.md
