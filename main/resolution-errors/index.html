@@ -1358,6 +1358,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../implementations/test-suite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    did:webvh Test Suite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../implementations/adoption/" class="md-nav__link">
         
   
@@ -1795,12 +1816,12 @@
 This page defines the set of structured error codes and messages used in <code>did:webvh</code> DID resolution metadata, specifically in the <code>problemDetails</code> field as defined by <a href="https://datatracker.ietf.org/doc/html/rfc9457">RFC 9457</a>.</p>
 <h2 id="using-rfc-9457-in-didwebvh">Using RFC 9457 in did:webvh<a class="headerlink" href="#using-rfc-9457-in-didwebvh" title="Permanent link">&para;</a></h2>
 <p>When DID resolution fails, <code>did:webvh</code> resolvers <strong>MUST</strong> return an <code>error</code> field in the <code>didResolutionMetadata</code>, as defined in the <a href="https://www.w3.org/TR/did-core/#did-resolution">DID Resolution specification</a>. To provide additional structured information, resolvers <strong>SHOULD</strong> include a <code>problemDetails</code> object conforming to RFC 9457. For example, the DID Resolution Metadata would look like this:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&quot;didResolutionMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalidDid&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;problemDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/security#INVALID_CONTROLLED_IDENTIFIER_DOCUMENT_ID&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The resolved DID is invalid.&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Parse error of the resolved DID at character 3, expected &#39;:&#39;.&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">"didResolutionMetadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalidDid"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"problemDetails"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://w3id.org/security#INVALID_CONTROLLED_IDENTIFIER_DOCUMENT_ID"</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The resolved DID is invalid."</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parse error of the resolved DID at character 3, expected ':'."</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
 </code></pre></div>

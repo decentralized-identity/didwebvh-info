@@ -1147,6 +1147,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../implementations/test-suite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    did:webvh Test Suite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../implementations/adoption/" class="md-nav__link">
         
   
@@ -1359,6 +1380,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-site-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previewing the Site Locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1452,6 +1488,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-site-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previewing the Site Locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1487,7 +1538,7 @@ content found here about the DID Method:</p>
 </ul>
 <p>The <code>did:webvh</code> information site is a <a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> site generated from the
 Markdown files in the site's <a href="https://github.com/decentralized-identity/didwebvh-info">GitHub repository</a>.</p>
-<p>Contributions can be mode via pull requests (PRs) to the GitHub repository that will
+<p>Contributions can be made via pull requests (PRs) to the GitHub repository that will
 be reviewed and (if relevant) merged. You can use the GitHub website itself to add or
 edit files, or fork the repo and edit them in your favorite GitHub-friendly
 editor.  Each commit of a PR must have a DCO (Developer Certificate of Origin -
@@ -1495,10 +1546,42 @@ editor.  Each commit of a PR must have a DCO (Developer Certificate of Origin -
 automagically on the GitHub website or, if done from the command line, by adding
 the <code>-s</code> (lower case) option on the <code>git commit</code> command (e.g., <code>git commit -s
 -m "Comment about the commit"</code>).</p>
-<p>If you are running locally and want to test your changes before creating your
-pull request, you must install and run <code>mkdocs</code>. Guidance for that can be found in the
-<a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> documentation. Once it is installed, run <code>mkdocs</code> from the
-root folder and open your browser to the indicated site.</p>
+<h3 id="previewing-the-site-locally">Previewing the Site Locally<a class="headerlink" href="#previewing-the-site-locally" title="Permanent link">&para;</a></h3>
+<p>To check your changes before creating your pull request, build and serve the
+site locally. From the root folder of the repository:</p>
+<ol>
+<li>
+<p>Install the same versions of MkDocs Material and <code>mike</code> that the
+   publishing workflow uses (a Python virtual environment is a good idea):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>mkdocs-requirements.txt
+</code></pre></div>
+</li>
+<li>
+<p>Copy the Markdown files from the root folder (this <code>README.md</code>,
+   <code>CONTRIBUTOR.md</code> and <code>CODE_OF_CONDUCT.md</code>) into the <code>docs</code> folder:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>./scripts/prepmkdocs.sh
+</code></pre></div>
+<p>The "Contributing" pages of the site are built from these files. The
+script copies each one into <code>docs</code> as <code>root_&lt;name&gt;.md</code>. Without this step
+the "Contributing" pages are missing (404) in your local site.</p>
+</li>
+<li>
+<p>Serve the site, and open your browser to the address it shows (usually
+   <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>). The site reloads as you edit the files.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+</li>
+<li>
+<p>When you are done, remove the copied files so they aren't committed:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>./scripts/prepmkdocs.sh<span class="w"> </span>clean
+</code></pre></div>
+</li>
+</ol>
+<p>Edit the root Markdown files themselves, not the <code>root_*.md</code> copies in the <code>docs</code> folder,
+which are overwritten each time the script is run.</p>
+<p>The published site is built the same way: the <a href="https://github.com/decentralized-identity/didwebvh-info/blob/main/.github/workflows/publish-docs.yml">publish-docs workflow</a> runs
+<code>scripts/prepmkdocs.sh</code> and then uses <code>mike</code> to publish the <code>main</code> branch as the
+<code>latest</code> version of the site.</p>
 
 
 
