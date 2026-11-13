@@ -14,7 +14,7 @@ inherently decentralized as it relies on DNS domain names, which require central
 `did:web` lacks a cryptographically verifiable, tamper-resistant, and persistently stored DID document,
 including its verifiable history.
 
-We propose the `did:webhv` (`did:web` + Verifiable History) method presented
+We propose the `did:webvh` (`did:web` + Verifiable History) method presented
 here as an enhancement of `did:web`, providing a solution to address the
 limitations inherent of `did:web`. The `did:webvh` was called `did:tdw` through
 version v0.4 of the specification. `did:webvh` introduces features such as a
@@ -120,3 +120,15 @@ security assurances provided by `did:webvh`.
 DID. For resolvers that want more assurance, `did:webvh` provides a way to "trust
 did:web" (or to enable a "trusted web" if you say it fast) enabled by the
 features listed in the [introduction](./README.md).
+
+### `did:webvh` and `did:vh`
+
+`did:webvh` keeps the domain name from `did:web`, so a resolver can find the
+DID Log from the DID alone. The domain isn't needed for security, since the SCID
+and the verifiable history provide that, but it does tie the DID to one
+location. [`did:vh`](./didvh.md) is the location-independent sibling of
+`did:webvh`: the same DID Log, SCID, key authorization, pre-rotation, witnesses
+and watchers, with a DID of just `did:vh:<SCID>`. The client sources the log
+(from context, a watcher, a peer, or a web location) and passes it to the
+resolver. See [did:vh or did:webvh -- which should I
+use?](./faq/didvh-or-didwebvh.md)

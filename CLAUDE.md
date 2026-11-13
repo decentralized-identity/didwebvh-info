@@ -32,7 +32,7 @@ summaries, before writing about them.
 | `did:webvh` Editors Draft | <https://identity.foundation/didwebvh/next/> | same repo, `spec/` | Work towards the next version |
 | `did:webvh` Experimental (on VH-Log) | `https://identity.foundation/didwebvh/experimental/` (once merged) | same repo, `spec-exp/`, branch `exp-wvh-on-vhlog` | Experimental, not for implementation |
 | VH-Log | <https://swcurran.github.io/VH-Log/> | `swcurran/VH-Log`, `/d2/repos/VH-Log` | Pre-draft Editors Draft v0.1 |
-| `did:vh` | <https://swcurran.github.io/didvh/> | `swcurran/didvh`, `/d2/repos/didvh` | Pre-draft Editors Draft v0.1 |
+| `did:vh` | <https://identity.foundation/didvh/next/> | `decentralized-identity/didvh`, `/d2/repos/didvh` (`spec/`) | Editors Draft v0.1 |
 
 Each of those repos has its own CLAUDE.md with design decisions and TODOs. Read the relevant
 one when writing about that spec.
@@ -58,13 +58,18 @@ one when writing about that spec.
 
 ### did:vh
 
-- The first VH-Log specialisation: `state` is a DIDDoc, and the DID is just `did:vh:<SCID>`, with
-  **no location**. It is the location-independent sibling of `did:webvh`, kept as close to it as
-  possible (same `did.jsonl` / `did-witness.json`, `did:key` witnesses, `method` = `did:vh:1.0`).
+- A standalone DID method (`spec/`): `did:webvh` with the "web" removed. The DID is just
+  `did:vh:<SCID>`, with **no location**. It is the location-independent sibling of `did:webvh`,
+  kept as close to it as possible (same `did.jsonl` / `did-witness.json`, `did:key` witnesses,
+  `method` = `did:vh:1.0`). A behaviourally equivalent version written as a VH-Log
+  specialisation (`spec-vhlog/`) is planned but not started.
 - Resolution is DID Resolution's `resolve(did, resolutionOptions)`. The client passes the log
-  directly (`didLog` + `didWitness`) or by reference (`src`: an `https` web location, another
-  URL scheme such as `ipns`, or, for a local resolver only, a `file:` directory or loopback
-  `http`). The resolver does not discover logs.
+  directly (`didLog` + `didWitness`) or by reference (`srcLog` + `srcWitness`, each naming a
+  file: an `https` web location, another URL scheme such as `ipns`, or, for a local resolver
+  only, a `file:` URL or loopback `http`). `src` is a DID URL parameter only (`https` or another
+  hierarchical scheme, never `file:` / `http`); it names a location, from which the dereferencer
+  derives `srcLog` / `srcWitness` by appending `/did.jsonl` / `/did-witness.json`. The resolver
+  does not discover logs.
 - Sourcing the log is non-normative: known in context, from watchers (`GET /log?scid=`),
   peer-to-peer exchange (in the manner of `did:peer`, but with rotation and pre-rotation), or a
   web location. Covers freshness and duplicity, since there is no authoritative location.
@@ -89,10 +94,10 @@ one when writing about that spec.
 Agreed so far: introduce the spec family, and fix out-of-date material. Confirm scope and
 structure with the user before large rewrites.
 
-1. **Introduce VH-Log, did:vh and the experimental spec.** Probably a "Specifications" area
-   replacing the single iframe page (`docs/specification.md`), with a page each explaining how
-   they relate. Update `docs/README.md` and `docs/overview.md` to position `did:webvh` within the
-   family.
+1. **Introduce VH-Log and the experimental spec.** Not yet: the user says VH-Log isn't ready.
+   `did:vh` is done (Welcome page, `docs/didvh.md`, the Specifications page, the
+   `faq/didvh-or-didwebvh.md` FAQ, and notes in the Overview and Implementer's Guide README).
+   When VH-Log is added, the Specifications tab can split into a page per spec.
 2. **Migrate off MkDocs.** The target is not yet chosen. Keep the published URLs working
    (`/latest/...` paths from `mike` are linked from the specs, for example
    `https://didwebvh.info/latest/implementers-guide/prerotation-keys/` and
