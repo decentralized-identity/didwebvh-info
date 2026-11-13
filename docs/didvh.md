@@ -14,6 +14,13 @@ did:webvh:QmfGEUAcMpzo25kF2Rhn8L5FAXysfGnkzjwdKoNPi615XQ:example.com:dids:issuer
 did:vh:QmfGEUAcMpzo25kF2Rhn8L5FAXysfGnkzjwdKoNPi615XQ
 ```
 
+When a `did:vh` DID is shared, it can carry a hint about where its DID Log is
+kept, in [the `?src=` DID URL parameter](#the-src-did-url-parameter):
+
+```text
+did:vh:QmfGEUAcMpzo25kF2Rhn8L5FAXysfGnkzjwdKoNPi615XQ?src=https://example.com/dids/issuer
+```
+
 ## Why a DID Without a Location?
 
 In `did:webvh`, the domain name does two jobs: it tells a resolver where to find
@@ -55,7 +62,7 @@ resolution options, and dropping the features that depend on a web location.
 | | `did:webvh` | `did:vh` |
 |---|---|---|
 | DID | `did:webvh:<SCID>:<domain>[:<path>]` | `did:vh:<SCID>` |
-| Finding the DID Log | The DID-to-HTTPS transformation | The client sources the log and gives it to the resolver |
+| Finding the DID Log | The DID-to-HTTPS transformation | The client sources the log and gives it to the resolver, possibly from a location named in a `?src=` DID URL parameter |
 | `method` parameter values | `did:webvh:1.0` | `did:vh:1.0` |
 | Portability (`portable` parameter) | Optional | Not used: the DID never changes |
 | Parallel `did:web` DID | Optional | Not applicable |
@@ -95,17 +102,59 @@ does, and returns the DIDDoc. A reference is not authoritative: it says
 nothing about who controls the DID, and the log found there may not be the
 latest.
 
-A DID URL can also carry a web location, in the [`src` DID URL
+### The `?src=` DID URL Parameter
+
+A `did:vh` DID can be shared with a hint about where its DID Log is kept, by
+adding the [`src` DID URL query
 parameter](https://identity.foundation/didvh/next/#the-src-did-url-parameter),
-adopted from the proposed `did:scid` metamethod:
+adopted from the proposed `did:scid` metamethod. Its value names the location
+of the DID Log, that is, the location holding `did.jsonl` and (if witnesses
+are active) `did-witness.json`:
 
 ```text
 did:vh:QmfGEUAcMpzo25kF2Rhn8L5FAXysfGnkzjwdKoNPi615XQ?src=https://example.com/dids/issuer
 ```
 
-The `src` value names the location holding `did.jsonl` and `did-witness.json`.
-Because a DID URL can come from an untrusted party, `src` must not be a `file:`
-or `http` URL.
+`src` can be combined with the version selection parameters, such as
+`?src=https://example.com/dids/issuer&versionNumber=2`.
+
+When such a DID URL is dereferenced, the dereferencer (the resolver's client)
+derives the file references by removing any trailing `/` from the `src` value
+and appending the file names, then passes them by reference to the resolver:
+
+```json
+{
+  "did": "did:vh:QmfGEUAcMpzo25kF2Rhn8L5FAXysfGnkzjwdKoNPi615XQ",
+  "resolutionOptions": {
+    "srcLog": "https://example.com/dids/issuer/did.jsonl",
+    "srcWitness": "https://example.com/dids/issuer/did-witness.json"
+  }
+}
+```
+
+Alternatively, it retrieves the files itself and passes them directly in
+`didLog` and `didWitness`. Some things to know about `src`:
+
+- **It is a DID URL parameter only.** It is not a resolution option: a
+  resolver is always given `srcLog` and `srcWitness` (or `didLog` and
+  `didWitness`). Likewise, those resolution options must not be used as DID
+  URL parameters.
+- **It is a hint, not an instruction.** The dereferencer may apply its own
+  policy, for example using `src` only if it names a location the
+  dereferencer trusts, or ignoring it in favour of a copy of the DID Log it
+  already has. `src` never changes which version of the DIDDoc is returned.
+- **It is not authoritative.** Anyone can publish a copy of a DID Log at a
+  location they control, and anyone can put any `src` value in a DID URL. The
+  domain in a `src` value says nothing about who controls the DID.
+- **It must be a safe URL.** The value is an absolute `https` URL (or a URL
+  with another hierarchical scheme the resolver supports, such as `ipns`),
+  percent-encoded, with no query or fragment. Because a DID URL can come from
+  an untrusted party, `src` must not be a `file:` or `http` URL. An invalid
+  `src` value results in an `invalidDidUrl` error.
+
+See [Reading `did:vh` DID
+URLs](https://identity.foundation/didvh/next/#reading-didvh-did-urls) in the
+specification for the full rules.
 
 ## Sourcing the DID Log
 
