@@ -20,7 +20,7 @@
     
     
       
-        <title>did:webvh Resolution Error Codes - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
+        <title>did:webvh Resolution Error Codes - did:webvh and did:vh: DIDs with Verifiable History</title>
       
     
     
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-header__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href=".." title="did:webvh and did:vh: DIDs with Verifiable History" class="md-header__button md-logo" aria-label="did:webvh and did:vh: DIDs with Verifiable History" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
@@ -105,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            did:webvh DID Method Information -- "did:web + Verifiable History"
+            did:webvh and did:vh: DIDs with Verifiable History
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -235,7 +235,7 @@
         <a href="../specification/" class="md-tabs__link">
           
   
-  The Specification
+  Specifications
 
         </a>
       </li>
@@ -381,12 +381,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-nav__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href=".." title="did:webvh and did:vh: DIDs with Verifiable History" class="md-nav__button md-logo" aria-label="did:webvh and did:vh: DIDs with Verifiable History" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
     </a>
-    did:webvh DID Method Information -- "did:web + Verifiable History"
+    did:webvh and did:vh: DIDs with Verifiable History
   </label>
   
     <div class="md-nav__source">
@@ -454,7 +454,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction to did:webvh
+    Introduction
   </span>
   
 
@@ -475,7 +475,28 @@
         
   
   <span class="md-ellipsis">
-    Overview
+    Overview of did:webvh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../didvh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to did:vh
   </span>
   
 
@@ -602,7 +623,7 @@
             
   
   <span class="md-ellipsis">
-    The Specification
+    Specifications
   </span>
   
 
@@ -612,7 +633,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            The Specification
+            Specifications
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -627,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    Specification
+    did:webvh and did:vh Specifications
   </span>
   
 
@@ -780,6 +801,27 @@
   
   <span class="md-ellipsis">
     How is DID Duplicity Handled in did:webvh?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/didvh-or-didwebvh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    did:vh or did:webvh -- which should I use?
   </span>
   
 
@@ -1858,7 +1900,7 @@ This page defines the set of structured error codes and messages used in <code>d
 <strong>Detail:</strong> The protocol '${protocol}' in the DID Log File does not match the expected protocol.</p>
 <h3 id="version-mismatch">version-mismatch<a class="headerlink" href="#version-mismatch" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> Version number in log doesn't match expected 
-<strong>Detail:</strong> A DID log entry's version number '<span 1="1" _="+" class="arithmatex" i="i">\({version}' does not match the expected sequence '\)</span>'.</p>
+<strong>Detail:</strong> A DID log entry's version number '<span 1 _ class="arithmatex" i>\({version}' does not match the expected sequence '\)</span>'.</p>
 <h3 id="version-invalid">version-invalid<a class="headerlink" href="#version-invalid" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> Version number in log is invalid 
 <strong>Detail:</strong> A DID log entry's version number '${version}' is zero or not numeric.</p>
@@ -1870,7 +1912,7 @@ This page defines the set of structured error codes and messages used in <code>d
 <strong>Detail:</strong> A DID log entry ('${version}') has a <code>versionTime</code> that cannot be parsed as a ISO date-time for comparisons.</p>
 <h3 id="scid-verification-failed">scid-verification-failed<a class="headerlink" href="#scid-verification-failed" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> SCID not derived from logEntryHash<br />
-<strong>Detail:</strong> SCID ('<span class="arithmatex" logEntryHash="logEntryHash">\({meta.scid}') validation failed due to a mismatch in expected hash ('\)</span>').</p>
+<strong>Detail:</strong> SCID ('<span class="arithmatex" logEntryHash>\({meta.scid}') validation failed due to a mismatch in expected hash ('\)</span>').</p>
 <h3 id="proof-verification-failed">proof-verification-failed<a class="headerlink" href="#proof-verification-failed" title="Permanent link">&para;</a></h3>
 <p><strong>Title:</strong> Version failed verification of the proof<br />
 <strong>Detail:</strong> The proof attached to the version (${meta.versionId}) log entry failed verification.</p>

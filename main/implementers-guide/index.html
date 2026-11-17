@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../faq/Duplicity/">
+        <link rel="prev" href="../faq/didvh-or-didwebvh/">
       
       
         <link rel="next" href="resolver-algorithm/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>The `did:webvh` Implementer's Guide - did:webvh DID Method Information -- "did:web + Verifiable History"</title>
+        <title>The `did:webvh` Implementer's Guide - did:webvh and did:vh: DIDs with Verifiable History</title>
       
     
     
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-header__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href=".." title="did:webvh and did:vh: DIDs with Verifiable History" class="md-header__button md-logo" aria-label="did:webvh and did:vh: DIDs with Verifiable History" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
@@ -105,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            did:webvh DID Method Information -- "did:web + Verifiable History"
+            did:webvh and did:vh: DIDs with Verifiable History
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -235,7 +235,7 @@
         <a href="../specification/" class="md-tabs__link">
           
   
-  The Specification
+  Specifications
 
         </a>
       </li>
@@ -381,12 +381,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="did:webvh DID Method Information -- &#34;did:web + Verifiable History&#34;" class="md-nav__button md-logo" aria-label="did:webvh DID Method Information -- "did:web + Verifiable History"" data-md-component="logo">
+    <a href=".." title="did:webvh and did:vh: DIDs with Verifiable History" class="md-nav__button md-logo" aria-label="did:webvh and did:vh: DIDs with Verifiable History" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/decentralized-identity/didwebvh-info/main/docs/assets/didwebvh.jpg" alt="logo">
 
     </a>
-    did:webvh DID Method Information -- "did:web + Verifiable History"
+    did:webvh and did:vh: DIDs with Verifiable History
   </label>
   
     <div class="md-nav__source">
@@ -454,7 +454,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction to did:webvh
+    Introduction
   </span>
   
 
@@ -475,7 +475,28 @@
         
   
   <span class="md-ellipsis">
-    Overview
+    Overview of did:webvh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../didvh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to did:vh
   </span>
   
 
@@ -602,7 +623,7 @@
             
   
   <span class="md-ellipsis">
-    The Specification
+    Specifications
   </span>
   
 
@@ -612,7 +633,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            The Specification
+            Specifications
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -627,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    Specification
+    did:webvh and did:vh Specifications
   </span>
   
 
@@ -780,6 +801,27 @@
   
   <span class="md-ellipsis">
     How is DID Duplicity Handled in did:webvh?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/didvh-or-didwebvh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    did:vh or did:webvh -- which should I use?
   </span>
   
 
@@ -1444,6 +1486,17 @@ and use cases. </p>
 <p>The guide explores the features of <code>did:webvh</code>, how to deploy them,
 what’s covered in the specification versus what implementers need to handle,
 provides pointers to existing implementations, and more.</p>
+<div class="admonition note">
+<p class="admonition-title">Using this guide for <code>did:vh</code></p>
+<p>Most of this guide also applies to <a href="../didvh/"><code>did:vh</code></a>, which shares
+<code>did:webvh</code>'s DID Log, SCID, <a href="did-valid-keys/">valid keys</a>,
+<a href="prerotation-keys/">pre-rotation</a> and <a href="witnesses/">witnesses</a>. The
+exceptions are the DID-to-HTTPS steps of the <a href="resolver-algorithm/">resolver
+algorithm</a>, which <code>did:vh</code> replaces with its
+<a href="https://identity.foundation/didvh/next/#didvh-resolution-options">resolution
+options</a>,
+and <a href="did-portability/">DID portability</a>, which <code>did:vh</code> doesn't need.</p>
+</div>
 <p>Contributions to the guide are welcome! If you have learned something about
 deploying did:webvh and want to share -- open an <a href="https://github.com/decentralized-identity/didwebvh-info">issue</a>, or submit a pull request
 to add an article. If you do add an article, make sure you put a link to your
@@ -1484,7 +1537,7 @@ repository (or we are happy to do it for you...).</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../faq/Duplicity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How is DID Duplicity Handled in did:webvh?">
+          <a href="../faq/didvh-or-didwebvh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: did:vh or did:webvh -- which should I use?">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1494,7 +1547,7 @@ repository (or we are happy to do it for you...).</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                How is DID Duplicity Handled in did:webvh?
+                did:vh or did:webvh -- which should I use?
               </div>
             </div>
           </a>
