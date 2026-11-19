@@ -44,3 +44,18 @@ jobs:
           echo $VERSION $ALIAS
           mike deploy --push --update-aliases $VERSION $ALIAS
           mike set-default latest
+
+      - name: Publish root redirects
+        run: |
+          # Copy the redirect pages in redirects/ (e.g. /agenda -> /latest/agenda/) to the
+          # root of gh-pages. mike leaves files outside its version folders alone.
+          git worktree add ../gh-pages-root gh-pages
+          cp -r redirects/. ../gh-pages-root/
+          cd ../gh-pages-root
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Redirects unchanged"
+          else
+            git commit -m "Update root redirects"
+            git push origin gh-pages
+          fi
